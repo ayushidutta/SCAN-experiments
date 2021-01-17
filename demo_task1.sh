@@ -3,7 +3,7 @@
 DATA_DIR=data
 TRAIN_PATH=experiment1/tasks_train_simple
 TEST_PATH=experiment1/tasks_test_simple
-MODEL_DIR=models/tasks_simple
+MODEL_DIR=models/exp1_lstm_drop0
 
 python main.py \
   --data_dir=${DATA_DIR} \
@@ -12,6 +12,11 @@ python main.py \
   --test_path=${TEST_PATH} \
   --batch_size=1 \
   --hidden_dim=200 \
-  --dropout=0.5 \
-  --rnn_type=lstm \
+  --dropout=0 \
+  --bidirection=0 \
+  --num_layers=1 \
+  --rnn_type=gru_attn \
+  --add_pos=1 \
+  --add_dl=0 \
+  --cl=0 \
   --eval=0

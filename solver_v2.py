@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch import Tensor
 from torchtext.data import BucketIterator
-from models import LSTMEncoder, LSTMDecoder, Seq2Seq, GRUEncoder, GRUAttDecoder
+from models_v2 import LSTMEncoder, LSTMDecoder, Seq2Seq, GRUEncoder, GRUAttDecoder
 from tqdm import tqdm
 import os
 import pdb
@@ -16,8 +16,10 @@ import matplotlib.pyplot as plt
 
 CLIP = 5.0
 
-def load_model(SRC, TRG, state):
+def load_model(data_fields, state):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    SRC = data_fields["src"]
+    TRG = data_fields["trg"]
     INPUT_DIM = len(SRC.vocab)
     OUTPUT_DIM = len(TRG.vocab)
     EMB_DIM = HID_DIM = state['hidden_dim']

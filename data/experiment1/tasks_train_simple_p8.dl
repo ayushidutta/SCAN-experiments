@@ -1,0 +1,1672 @@
+ROOT advmod advmod advmod cc conj amod amod dobj
+ROOT advmod dep prep pobj advmod
+ROOT mark advcl advmod advmod advmod
+ROOT prep amod pobj cc auxpass conj
+ROOT advmod dep advmod cc conj amod amod npadvmod
+ROOT acomp cc conj advmod advmod advmod
+ROOT advmod dep dobj prep pcomp advmod
+ROOT dobj prep pobj advmod advcl
+ROOT advmod dep prep pobj advmod advmod
+ROOT advmod npadvmod advmod cc conj advmod advmod
+ROOT prt amod dobj prep pcomp advmod amod pobj
+ROOT advmod amod dobj prep pobj advcl advmod
+ROOT advmod amod dobj prep pcomp advmod acomp
+ROOT prt advmod advmod mark advcl prep amod pobj
+ROOT advmod conj dobj cc nsubj conj dobj
+ROOT acl prep pobj advmod
+ROOT advmod prep pcomp advmod advmod
+ROOT advmod advmod advmod cc conj advmod
+ROOT advmod advmod cc conj advmod
+ROOT prt advmod cc conj amod dobj
+ROOT amod dobj cc conj amod dobj
+ROOT advmod prep pobj advmod dep
+ROOT advmod advcl cc conj advmod conj advmod
+ROOT prt advcl cc conj advmod advmod
+ROOT advmod advmod cc conj amod amod dobj
+ROOT cc conj prt amod dobj
+ROOT advmod advmod prep compound pobj
+ROOT advmod advmod advmod mark auxpass advcl oprd
+ROOT amod amod dobj cc conj advmod advmod advmod
+nsubj advmod ROOT advmod cc conj dobj
+nsubj acl advmod prep pobj advmod ROOT advmod
+ROOT advmod advmod prep compound pobj
+ROOT advmod advcl cc conj dep
+ROOT advmod advmod cc conj dep
+ROOT npadvmod mark advcl advmod dep advmod
+nsubj ROOT advmod prep pobj advcl advmod
+ROOT acomp amod dobj cc conj amod dobj
+ROOT advmod dep cc conj advmod
+ROOT prt advmod cc conj advmod amod npadvmod
+ROOT advmod xcomp prep pobj advmod advmod
+ROOT advmod advcl cc conj amod dobj
+ROOT advmod advmod prep pobj advcl oprd
+ROOT amod dobj cc auxpass conj oprd
+ROOT advmod conj dobj mark advcl acomp
+ROOT advmod advmod advmod prep pobj
+ROOT prep amod pobj cc conj amod amod npadvmod
+ROOT npadvmod prep pobj advmod dep
+ROOT advmod advmod prep pobj advmod advmod
+ROOT advmod amod dobj cc conj advmod dep
+compound ROOT cc conj
+ROOT advmod dep prep pobj advmod advmod advmod
+ROOT advmod advcl advmod cc conj advmod advmod
+nsubj ROOT cc conj dobj
+ROOT amod dobj cc conj dep
+ROOT advmod amod dobj mark advcl advmod advmod
+ROOT amod dobj prep pobj
+ROOT advmod advcl cc conj advmod amod npadvmod
+advcl acomp ROOT advmod prep pobj advmod advmod
+ROOT advmod advmod cc conj advmod advmod advmod
+ROOT acl advmod cc conj advmod amod pobj
+ROOT amod dobj prep pobj advmod advmod advmod
+ROOT advmod dep advmod prep pobj advmod dep advmod
+ROOT advmod advmod advmod cc conj advmod advmod advmod
+ROOT acomp cc conj advmod advmod
+ROOT advmod advmod cc conj advmod dep
+ROOT advmod amod dobj cc auxpass conj oprd
+ROOT advmod advmod advmod cc conj advmod
+ROOT advmod advmod prep pobj conj oprd
+ROOT advmod advmod advmod prep pobj advcl advmod
+ROOT advmod amod npadvmod mark advcl amod dobj
+ROOT amod amod npadvmod mark advcl advmod
+ROOT prt advmod cc conj advmod conj advmod
+ROOT advmod amod pobj prep pobj advmod amod npadvmod
+ROOT advmod advmod advmod prep compound amod pobj
+ROOT advmod advmod prep pobj advcl advmod
+ROOT acl prep pobj advmod advmod advmod
+ROOT acomp cc conj advmod amod pobj
+ROOT advmod dep cc conj advmod conj advmod
+ROOT advmod advmod prep compound pobj
+ROOT prt advmod cc conj amod amod dobj
+ROOT advmod advmod prep pcomp advmod conj advmod
+ROOT advmod prep pobj advmod dep advmod
+ROOT advmod cc conj
+ROOT npadvmod prep pcomp advmod advmod advmod
+ROOT amod amod dobj cc conj advmod dep
+ROOT advmod advmod advmod prep pobj conj oprd
+ROOT acomp advmod cc conj dobj
+ROOT advmod cc conj advmod dep
+compound nsubj mark compound amod ROOT
+ROOT prep amod pobj cc conj advmod advmod advmod
+ROOT advmod advcl prep pobj
+ROOT advmod advcl prep pobj prep amod pobj
+nsubj ROOT dobj cc conj advmod
+ROOT amod amod npadvmod mark advcl advmod amod dobj
+nsubj advmod acl prep pobj advmod ROOT advmod
+ROOT advmod xcomp advmod cc auxpass conj advmod
+ROOT advmod dep dobj mark advcl advmod amod dobj
+ROOT acomp acomp cc conj advmod amod dobj
+ROOT amod dobj mark auxpass advcl advmod
+ROOT advmod prep pobj
+ROOT dobj cc conj advmod advmod advmod
+ROOT nsubj cc conj ccomp advmod
+ROOT prep pcomp prep amod pobj
+nsubj advmod ROOT advmod cc conj amod dobj
+nsubj ROOT advmod cc conj advmod amod dobj
+ROOT advmod prep advcl prep amod pobj
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod advmod cc conj conj advmod
+ROOT advmod advmod mark advcl advmod amod dobj
+compound ROOT cc conj advmod advmod advmod
+ROOT advmod advcl cc conj acomp dep
+ROOT advmod prep pcomp advmod advmod
+ROOT advmod prep pobj pobj
+compound ROOT prep pobj advmod
+nsubj ROOT dobj prep pcomp advmod advmod
+ROOT advmod advcl cc conj acl oprd
+ROOT advmod advmod prep pobj npadvmod dep
+ROOT advmod advmod advmod prep pobj advmod dep advmod
+ROOT advmod acl prep pobj advmod dep
+nsubj advmod ROOT advmod prep pobj advmod amod dobj
+ROOT advmod advmod prep pcomp advmod advmod
+ROOT prep pobj advmod advcl
+ROOT advmod advmod cc conj advmod advmod
+ROOT prt advmod cc conj advmod advmod
+ROOT advmod amod dobj cc conj acomp advmod advmod
+ROOT advmod advcl advmod cc conj advmod npadvmod
+ROOT advmod advmod prep pobj dep advmod
+nsubj ROOT advmod prep pcomp prt amod pobj
+ROOT advmod advmod advmod cc conj advmod amod dobj
+ROOT amod amod dobj cc conj amod amod npadvmod
+ROOT mark pobj advcl
+ROOT prt amod pobj cc conj advmod advmod
+nsubj ROOT dobj cc conj advmod advmod
+ROOT advmod advmod mark advcl advmod
+nsubj ROOT advmod prep pcomp advmod
+nsubj ROOT prep pcomp advmod advcl advmod
+ROOT advmod acomp cc conj advmod
+ROOT prt advmod advmod cc conj advmod
+ROOT advmod advmod prep pobj advmod dep advmod
+ROOT advmod xcomp advmod prep pcomp advmod
+auxpass ROOT dobj mark nsubj advcl advmod
+ROOT prt amod dobj cc conj advmod advmod
+auxpass ROOT dobj prep pobj advmod amod oprd
+ROOT advmod advmod prep pcomp amod pobj
+nsubj ROOT advmod cc conj advmod
+ROOT advmod advmod advmod cc nsubj conj advmod
+ROOT advmod advmod advmod cc conj amod amod npadvmod
+ROOT acomp advmod cc auxpass conj oprd
+ROOT advmod dep advmod prep pobj pobj
+ROOT amod amod npadvmod mark advcl advmod advmod advmod
+ROOT advmod xcomp mark advcl advmod advmod
+ROOT advmod prep advcl amod amod npadvmod
+ROOT acomp amod dobj cc conj advmod advmod
+ROOT advmod ROOT
+ROOT advmod advmod prep pcomp prep amod pobj
+auxpass ROOT advmod cc nsubj conj oprd
+ROOT acl advmod prep pcomp advmod
+ROOT advmod advcl cc conj acomp
+nsubj cc conj advmod ROOT
+ROOT advmod advmod advmod prep pcomp advmod advmod
+ROOT advmod advmod prep pobj advmod dep advmod
+ROOT prep amod pobj cc conj amod dobj
+nsubj advmod ROOT dobj prep compound pobj
+nsubj ROOT advmod cc conj advmod advmod
+ROOT acomp cc conj advmod advmod advmod
+ROOT advmod advmod prep pcomp advmod advmod
+ROOT advmod dep mark advcl advmod amod pobj
+ROOT advmod advmod prep nsubj conj oprd
+nsubj ROOT dobj prep pobj prep amod pobj
+ROOT acomp advmod cc conj advmod advmod
+ROOT advmod dep mark advcl prt amod dobj
+ROOT npadvmod prep pobj advcl advmod
+ROOT advmod xcomp advmod cc conj advmod amod dobj
+ROOT amod amod npadvmod prep pobj
+ROOT advmod advmod cc conj advmod npadvmod
+nsubj acl prep pobj advmod ROOT advmod
+ROOT prep pobj amod npadvmod
+ROOT advmod advmod cc conj advmod dep advmod
+ROOT advmod cc conj acomp amod dep
+ROOT cc conj advmod
+ROOT prt amod pobj cc conj dobj
+ROOT advmod advcl cc conj advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod advmod prep pcomp advmod advmod
+nsubj advmod ROOT advmod cc conj prep amod pobj
+ROOT advmod advmod advmod cc conj
+advcl advmod ROOT advmod prep pobj prt advmod
+ROOT advmod advcl cc conj amod dobj
+ROOT advmod dep advmod cc conj amod amod dobj
+nsubj ROOT dobj prep pcomp advmod advmod advmod
+nsubj ROOT dobj cc conj conj advmod
+ROOT advmod cc conj advmod advmod
+ROOT advmod dep advmod prep pobj advmod amod pobj
+ROOT dobj prep pcomp advmod advmod
+ROOT amod amod npadvmod prep pobj advcl advmod
+ROOT advmod prep pobj advmod advmod advmod
+ROOT advmod advmod cc conj amod amod dobj
+ROOT advmod dep advmod prep pobj advmod dep advmod
+advcl advmod ROOT advmod prep pobj advmod advmod advmod
+ROOT advmod amod pobj prep pcomp advmod advcl
+ROOT advmod xcomp mark advcl advmod advmod
+ROOT advmod advmod mark advcl advmod amod pobj
+ROOT advmod amod dobj cc conj prt amod dobj
+ROOT advmod xcomp advmod cc conj advmod advmod advmod
+nsubj ROOT cc conj advmod dep
+nsubj advmod ROOT dobj mark advcl advmod advcl
+ROOT advmod advcl mark advcl amod dobj
+ROOT advmod advmod
+ROOT advmod advmod prep pcomp advmod pobj
+ROOT advmod advmod prep pobj advmod advmod
+ROOT advmod prep pobj advmod
+ROOT cc conj acomp advmod advmod
+ROOT advmod cc auxpass conj advmod
+ROOT amod dobj cc conj amod dobj
+ROOT advmod advmod advmod cc conj advmod advmod
+ROOT advmod advmod prep pobj advmod advmod
+ROOT advmod advmod prep pobj advmod advmod
+ROOT prep amod pobj prep compound pobj
+ROOT acl prep pcomp advmod
+ROOT amod amod dobj cc conj advmod
+ROOT advmod advmod advmod mark advcl amod dobj
+ROOT advmod amod dobj prep pobj advcl
+ROOT acl prep pobj
+ROOT amod dobj prep pcomp advmod
+ROOT advmod dep advmod cc conj advmod amod dobj
+ROOT advmod advmod advmod cc conj conj advmod
+ROOT advmod advmod cc conj advmod dep advmod
+nsubj advmod ROOT advmod prep auxpass pobj
+ROOT acl prep pcomp advmod amod pobj
+ROOT advmod advmod prep pobj npadvmod
+ROOT prep pobj pobj
+nsubj acl advmod cc conj ROOT dobj
+auxpass ROOT advmod cc conj advmod
+ROOT amod amod npadvmod prep pobj pobj
+ROOT advmod cc conj advmod
+ROOT prt amod dobj prep pobj advmod advmod
+ROOT advmod amod dobj cc conj acl
+advcl advmod ROOT advmod prep pobj
+ROOT prep compound pobj
+ROOT advmod prep advcl advmod dep
+ROOT advmod prep pcomp advmod advmod
+auxpass ROOT advmod cc conj advmod advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT prt advcl cc conj advmod intj
+nsubj prep pobj ROOT oprd
+ROOT advmod advmod advmod cc conj advmod amod dobj
+ROOT amod amod dobj cc conj advmod amod dobj
+nsubj ROOT advmod prep pobj oprd
+ROOT acl prep pobj advmod advmod
+ROOT advmod amod pobj cc conj advmod amod dep
+nsubj ROOT dobj mark pobj advcl
+ROOT advmod dep advmod prep pobj advmod dep
+nsubj ROOT cc conj advmod advmod advmod
+ROOT advmod amod dobj cc conj acomp
+nsubj advmod ROOT advmod cc conj advmod advmod
+ROOT advmod advcl cc conj acomp
+ROOT advmod
+ROOT advmod cc conj advmod conj advmod
+ROOT advmod amod pobj cc conj advmod advmod advmod
+compound ROOT prep pobj
+ROOT advmod acl mark advcl amod dobj
+nsubj ROOT dobj cc conj advmod advmod
+nsubjpass acl prep auxpass ROOT oprd
+ROOT advmod advcl cc conj
+ROOT advmod advcl cc conj dep
+ROOT prep pcomp prep advmod
+ROOT acl cc auxpass conj advmod
+ROOT advmod advmod advcl amod dobj
+ROOT advmod amod dobj prep pcomp amod pobj
+ROOT advmod advmod prep pcomp advmod npadvmod
+ROOT prt advmod advmod prep pobj pobj
+ROOT advmod advmod cc conj advmod amod dobj
+ROOT amod dobj cc conj dobj
+ROOT advmod dep advmod prep compound pobj
+nsubj ROOT advmod prep pobj advmod advmod
+ROOT dobj prep pcomp advmod
+ROOT advmod amod pobj mark advcl prt advmod
+ROOT mark advcl prt advmod
+nsubj ROOT prep pobj advmod amod pobj
+ROOT advmod acl prep pobj advcl advmod
+ROOT amod amod dobj mark pcomp advmod advcl
+ROOT advmod prep pobj advmod amod npadvmod
+nsubj advmod ROOT dobj cc conj conj advmod
+nsubj ROOT advmod cc conj
+ROOT acomp dep cc compound conj
+ROOT advmod advmod prep pobj dep
+ROOT prep amod pobj cc conj advmod amod pobj
+nsubj acl advmod prep pobj advmod ROOT advmod
+nsubj advmod ROOT advmod prep pobj advcl
+nsubj ROOT cc conj amod dobj
+ROOT advmod amod dobj cc conj acomp dep
+ROOT advmod advmod cc conj advmod dep
+ROOT prt advmod cc conj advmod conj advmod
+ROOT advmod advmod advmod prep pobj advmod advmod
+ROOT advmod prep compound pobj
+ROOT prt amod dobj mark advcl advmod
+ROOT advmod advcl advmod prep pobj advmod advmod
+ROOT advmod advmod advmod cc nsubj conj advmod
+ROOT acl advmod cc conj acomp
+ROOT advmod prep compound pobj
+ROOT advmod advmod prep pobj advmod amod npadvmod
+ROOT amod dobj cc conj advmod advmod advmod
+ROOT advmod advcl prep pobj advmod advmod
+nsubj ROOT advmod prep pobj advcl oprd
+ROOT amod dobj mark advcl prt advmod advmod
+ROOT advmod xcomp advmod cc conj advmod amod pobj
+ROOT advmod amod pobj cc conj advmod advmod advmod
+ROOT acomp amod dobj cc auxpass conj oprd
+ROOT advmod cc conj advmod amod dep
+ROOT amod dobj prep pobj amod amod npadvmod
+ROOT advmod advmod advcl advmod advmod advmod
+ROOT advmod advmod cc conj
+compound nsubj cc conj advmod ROOT advmod
+ROOT advmod cc conj
+ROOT prep pobj advmod advmod advmod
+nsubj ROOT dobj prep pcomp advmod
+ROOT advmod dep advmod prep pobj advmod advmod
+ROOT advmod advmod advmod cc conj dobj
+ROOT amod amod nsubj cc conj advmod amod dobj
+nsubj ROOT advmod
+nsubj advmod ROOT advmod cc conj amod amod dobj
+ROOT advmod advmod prep pobj
+ROOT prep amod pobj cc conj advmod amod dobj
+nsubj ROOT cc conj amod dobj
+ROOT advmod advcl advmod prep pcomp advmod npadvmod
+ROOT advmod advmod prep pobj advmod advmod advmod
+nsubj ROOT dobj prep pcomp advmod
+ROOT advmod xcomp advmod prep pcomp advmod advmod
+ROOT advmod advcl advmod prep pobj advcl advmod
+ROOT advmod dep advmod cc conj advmod
+ROOT acomp cc conj prep amod pobj
+ROOT amod dobj prep pobj advmod advmod
+ROOT advmod advmod advmod cc conj advmod advmod
+ROOT amod dobj cc conj advmod advmod advmod
+nsubj ROOT dobj mark advcl advmod advmod advmod
+ROOT dobj prep pobj advcl oprd
+ROOT prt amod dobj cc conj dep
+ROOT acomp cc conj amod dobj
+ROOT advmod advmod cc conj advmod advmod
+advcl advmod ROOT advmod prep pobj advmod
+ROOT prt advmod cc conj acomp advmod
+ROOT prt amod dobj prep pobj advmod dep
+nsubj advmod ROOT advmod prep pobj advmod advcl
+nsubj ROOT dobj cc conj acomp
+ROOT advmod advmod advmod prep pobj
+ROOT advmod advmod advmod prep pobj dep
+ROOT advmod cc conj advmod advmod advmod
+ROOT advmod advmod prep pobj advmod conj advmod
+ROOT advmod advmod advmod prep pobj advmod pobj
+ROOT advmod xcomp advmod cc conj advcl advmod
+ROOT advmod advmod prep pobj advmod amod pobj
+ROOT dobj prep pobj advmod conj
+nsubj ROOT cc conj advmod conj advmod
+ROOT advmod advmod prep pcomp advmod npadvmod
+ROOT advmod advmod advmod prep pobj advmod advmod advmod
+ROOT advmod advmod advmod prep pcomp amod pobj
+ROOT prt advcl cc conj advmod amod dobj
+ROOT prep amod pobj cc conj advmod advmod advmod
+ROOT advmod advmod prep pobj advmod advmod
+nsubj acl cc conj ROOT dobj
+csubj advmod prep ROOT advmod advmod
+ROOT acomp cc conj advmod advmod
+nsubj advmod ROOT advmod prep pcomp prep amod pobj
+ROOT acomp cc conj advmod advmod
+ROOT amod dobj cc conj
+ROOT amod dobj cc conj advmod
+nsubj ROOT advmod prep pcomp advmod advmod
+nsubj ROOT advmod cc conj advmod npadvmod
+compound ROOT cc conj advmod
+ROOT acomp advmod cc conj advmod
+ROOT advmod advcl advmod cc conj acomp dep advmod
+ROOT advmod mark nsubj advcl advmod
+ROOT acomp acomp cc conj advmod
+ROOT advmod advmod advcl advmod dobj
+ROOT acl cc conj conj advmod
+ROOT advmod amod pobj cc conj advcl advmod
+ROOT prep pcomp prep amod pobj
+ROOT advmod prep pcomp advmod dep
+nsubj ROOT cc compound conj
+ROOT advmod amod pobj cc conj acomp amod dep
+ROOT advmod amod dobj prep pcomp advmod advmod
+ROOT advmod dep advmod prep pobj conj oprd
+ROOT advmod advcl prep pobj advmod dep
+ROOT prt amod dobj cc conj prt advmod
+ROOT advmod dep dobj mark pobj advcl advmod
+nsubj ROOT cc conj advmod conj advmod
+ROOT advmod prep pobj advmod npadvmod
+ROOT cc conj prt advmod
+ROOT advmod cc conj amod amod dobj
+ROOT prep amod pobj prep pobj advmod dep
+ROOT advmod advcl advmod prep compound pobj
+auxpass ROOT dobj cc conj advmod advmod
+ROOT amod amod dobj cc conj advmod
+ROOT advmod advmod cc conj amod dobj
+nsubj ROOT advmod cc conj amod dobj
+ROOT advmod advmod advmod prep pcomp advmod amod pobj
+ROOT amod dobj prep pcomp amod amod npadvmod
+ROOT advmod dep advmod cc compound dep
+ROOT advmod prep advcl amod nsubj
+ROOT advmod amod pobj cc conj acomp
+ROOT advmod advmod prep pobj advmod dep
+ROOT advmod prep pobj advmod advmod advmod
+ROOT amod dobj cc auxpass conj
+ROOT acomp amod dobj cc conj advmod advmod
+ROOT amod dobj prep pobj advcl oprd
+nsubj ROOT advmod cc conj amod amod dobj
+ROOT advmod advmod cc conj advmod amod pobj
+nsubj advmod ROOT dobj prep pobj
+ROOT advmod dobj cc conj advmod advmod advmod
+ROOT advmod advmod advmod mark auxpass advcl advmod
+ROOT advmod dobj cc conj amod dobj
+ROOT advmod advmod advmod prep pobj advmod advmod
+compound nsubj cc conj advmod ROOT oprd
+nsubj advmod ROOT advmod prep pcomp advmod advmod
+ROOT advmod advmod advmod cc conj amod dobj
+ROOT advmod prep pcomp amod pobj
+ROOT advmod advcl advmod prep pobj advmod advmod
+ROOT advmod advmod prep pobj
+nsubj ROOT cc conj advmod advmod
+ROOT amod amod npadvmod mark advcl advmod advmod advmod
+auxpass ROOT advmod cc conj
+ROOT advmod advmod prep pcomp advmod advmod advmod
+ROOT amod dobj cc conj advmod amod dep
+ROOT advmod amod dobj prep pobj advmod advmod advmod
+auxpass ROOT advmod prep pobj advmod amod pobj
+ROOT advmod cc auxpass conj advmod
+ROOT advmod advmod prep pobj advmod amod pobj
+advcl dobj prep pobj advmod ROOT
+ROOT dobj cc auxpass conj
+ROOT amod amod npadvmod mark advcl advmod advmod advmod
+ROOT prep pobj prep amod pobj
+ROOT advmod advmod prep pcomp advmod
+ROOT npadvmod mark advcl amod dobj
+ROOT advmod dep advmod mark advcl amod amod npadvmod
+ROOT advmod amod pobj prep pcomp amod pobj
+ROOT advmod advmod cc conj advmod advmod
+ROOT cc conj advmod advmod
+advcl advmod ROOT advmod prep pobj advmod advcl
+ROOT advmod amod pobj cc conj acomp advmod advmod
+ROOT advmod advmod advmod prep pobj advmod dep advmod
+ROOT advmod prep pobj
+ROOT advmod amod dobj cc conj advmod advmod
+ROOT advmod advmod prep pobj advmod advmod
+ROOT advmod dobj cc conj
+nsubj ROOT dobj prep pcomp advmod amod pobj
+ROOT advmod advcl prep pcomp advmod advmod advmod
+ROOT advmod advcl cc conj advmod oprd
+ROOT advmod advmod prep pcomp prep amod pobj
+ROOT advmod advmod prep pcomp advmod conj
+ROOT advmod advmod advmod cc conj advmod dep advmod
+ROOT acomp advcl cc conj acomp oprd
+ROOT advmod amod pobj cc conj
+nsubj ROOT cc conj advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT amod amod dobj cc conj dobj
+ROOT advmod cc conj advmod amod dobj
+ROOT prep amod pobj cc conj advmod amod pobj
+ROOT advmod dep advmod cc conj amod dobj
+auxpass ROOT prep pcomp amod amod oprd
+nsubj ROOT advmod cc conj advmod advmod advmod
+nsubj advmod ROOT advmod cc conj advmod amod dobj
+ROOT advmod advmod prep pobj advmod npadvmod
+ROOT advmod amod dobj prep pcomp advmod advmod
+ROOT advmod dep prep pobj advmod amod pobj
+nsubj advmod ROOT advmod cc conj advmod advmod
+ROOT advmod dep prep pobj advmod advmod advmod
+ROOT advmod xcomp prep pobj
+ROOT amod dobj mark advcl amod dobj
+nsubj ROOT dobj mark pobj advcl advmod
+ROOT prt amod pobj cc conj amod dobj
+nsubj advmod ROOT advmod prep pcomp advmod advmod advmod
+ROOT amod amod dobj cc conj advmod advcl
+csubj advmod prep ROOT advmod advmod
+ROOT advmod advmod prep pobj advmod dep
+nsubj cc conj ROOT oprd
+ROOT amod amod npadvmod prep pobj advmod advmod advmod
+ROOT advmod xcomp advmod prep pobj advcl
+ROOT advmod prep pobj advmod dep
+ROOT acomp amod dobj cc conj prep amod pobj
+ROOT advmod mark advcl advmod advmod
+ROOT amod amod npadvmod prep pcomp advmod dep advmod
+ROOT amod dobj mark advcl advmod
+ROOT advmod advmod advmod mark advcl advmod advmod
+nsubj ROOT dobj prep pobj
+nsubj advmod ROOT dobj prep pcomp advmod amod pobj
+ROOT advmod cc conj conj advmod
+auxpass ROOT oprd prep pobj advmod dep
+ROOT advmod prep pcomp advmod advmod
+ROOT amod dobj cc conj advmod
+ROOT advmod amod dobj prep pcomp prep amod pobj
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod advmod cc conj prep amod pobj
+ROOT advmod amod pobj cc conj advmod advcl
+ROOT advmod advmod advmod cc nsubj conj advmod
+ROOT advmod amod pobj cc conj advmod dep advmod
+ROOT advmod dep advmod prep pobj advmod amod npadvmod
+ROOT dobj cc conj advmod dep advmod
+ROOT amod amod npadvmod mark advcl prt amod dobj
+ROOT advmod advmod advmod cc conj advmod
+auxpass ROOT dobj cc conj advmod advmod
+ROOT advmod advcl prep pobj advmod
+ROOT amod dobj mark auxpass advcl
+ROOT advmod amod dobj prep pobj advmod advmod
+ROOT advmod advcl advmod cc conj advmod advmod advmod
+ROOT prep amod pobj cc conj advmod conj advmod
+ROOT amod amod npadvmod mark auxpass advcl
+nsubj ROOT advmod cc conj advmod conj advmod
+ROOT prep amod pobj cc conj advmod advmod
+ROOT advmod advmod advmod cc conj acomp advmod advmod
+ROOT amod dobj prep pcomp advmod amod pobj
+ROOT advmod conj dobj prep pcomp advmod dep advmod
+nsubj ROOT dobj cc conj advmod advmod
+nsubj acl prep pobj advmod ROOT
+ROOT advmod advmod cc conj dep
+ROOT advmod advmod advmod cc conj advmod advmod
+nsubj ROOT dobj mark pobj advcl oprd
+ROOT prt advmod advmod cc conj amod amod dobj
+ROOT advmod advmod advmod cc conj advmod npadvmod
+nsubj ROOT advmod prep pobj advmod amod dobj
+nsubjpass acl advmod cc conj ROOT
+ROOT amod dobj mark advcl advmod advmod advmod
+ROOT advmod prep pcomp advmod conj
+ROOT advmod amod npadvmod prep pcomp advmod advmod
+ROOT prt advmod cc conj advmod advmod
+ROOT advmod advmod cc conj advmod amod npadvmod
+ROOT advmod advmod cc conj acomp advmod advmod
+ROOT advmod dep advmod prep pcomp advmod amod npadvmod
+ROOT advmod prep pobj conj oprd
+ROOT advmod amod dobj cc conj advmod advmod
+ROOT advmod cc conj advmod amod dobj
+nsubj ROOT dobj prep pobj advmod conj advmod
+nsubj ROOT dobj prep pcomp advmod advmod advmod
+ROOT amod dobj prep pcomp amod amod npadvmod
+nsubj ROOT cc conj advmod advmod advmod
+ROOT prep amod pobj cc conj advmod conj advmod
+ROOT acl prep pobj advmod amod pobj
+ROOT amod amod dobj cc conj advmod advmod
+ROOT advmod prep pobj advmod
+ROOT advmod advcl cc conj advmod
+ROOT advmod acl prep compound pobj
+ROOT advmod advmod advmod cc conj advmod npadvmod
+ROOT amod npadvmod mark advcl amod amod dobj
+ROOT advmod prep pcomp advmod advmod advmod
+nsubj ROOT advmod prep pobj advmod advcl
+ROOT advmod advmod prep pcomp prep amod pobj
+ROOT amod dobj cc conj advmod amod dep
+ROOT advmod amod dobj prep pobj advmod advmod
+ROOT amod dobj mark nsubj advcl advmod
+nsubj advmod ROOT advmod prep pobj prt advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod cc conj advmod
+ROOT advmod advmod cc conj advmod dep
+ROOT advmod advmod advmod cc conj advmod conj advmod
+nsubj cc conj advmod ROOT dobj
+ROOT advmod advmod advmod mark advcl advmod conj advmod
+ROOT cc conj advmod amod dobj
+ROOT dobj cc conj
+ROOT advmod advcl cc conj advmod npadvmod
+ROOT advmod advmod cc conj acomp amod npadvmod
+ROOT advmod advmod prep pcomp amod amod npadvmod
+auxpass ROOT prep pcomp amod pobj
+ROOT advmod amod pobj cc conj advmod advmod
+nsubj ROOT advmod cc conj amod amod dobj
+nsubj ROOT cc conj advmod amod dep
+ROOT advmod dep advmod prep pcomp amod amod npadvmod
+ROOT acomp cc conj advmod advmod advmod
+ROOT advmod cc conj advmod amod dobj
+ROOT advmod advcl advmod cc conj advmod
+ROOT acomp amod dobj cc conj advmod dep advmod
+ROOT prt amod dobj mark advcl advmod conj advmod
+nsubj ROOT cc conj advmod advmod
+ROOT advmod advmod advmod prep pcomp advmod dep
+ROOT amod dobj cc conj advmod
+ROOT advmod advmod mark advcl advmod advmod advmod
+ROOT advmod cc auxpass conj advmod
+ROOT prt amod dobj prep pobj advmod amod dobj
+ROOT acomp cc conj conj oprd
+auxpass ROOT oprd prep pobj advcl advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod dep prep compound pobj
+ROOT amod amod dobj cc conj advmod amod npadvmod
+ROOT amod dobj mark advcl advmod
+ROOT amod npadvmod mark pobj advmod advcl
+ROOT advmod advmod advmod cc conj advmod
+advcl advmod ROOT advmod mark advcl prt amod dobj
+ROOT advmod advmod mark nsubj advcl oprd
+ROOT advmod advmod prep pcomp advmod
+ROOT advmod amod pobj prep pcomp advmod dep
+ROOT advmod advmod advmod mark advcl advmod dep
+ROOT acomp amod nsubj mark advcl amod dobj
+ROOT acomp dep advmod cc conj
+nsubj advmod ROOT advmod mark advcl prt advmod advmod
+ROOT advmod advmod advmod prep pcomp advmod advmod advmod
+ROOT amod amod npadvmod prep pcomp advmod pobj
+ROOT advmod prep pcomp advmod amod pobj
+ROOT advmod xcomp advmod prep pcomp advmod conj advmod
+compound npadvmod mark ROOT advmod amod pobj
+ROOT advmod advmod prep pobj advcl advmod
+ROOT acl advmod cc auxpass conj advmod
+ROOT cc conj acl
+ROOT prt amod pobj cc conj
+nsubj acl advmod prep pobj ROOT
+ROOT advmod advmod advmod mark advcl advmod dep advmod
+ROOT advmod xcomp advmod cc conj acomp amod dobj
+ROOT advmod advmod advmod prep pcomp advmod advmod advmod
+ROOT acomp amod nsubj prep pcomp advmod advcl advmod
+ROOT advmod advmod prep pcomp advmod advmod
+ROOT acl advmod prep pcomp advmod amod pobj
+nsubj ROOT advmod cc conj advmod advcl
+ROOT prep amod pobj cc auxpass conj oprd
+ROOT advmod npadvmod mark advcl advmod oprd
+ROOT advmod advcl cc conj advmod conj advmod
+nsubj ROOT cc conj prep amod pobj
+ROOT amod nsubj cc conj ccomp advmod
+nsubj ROOT advmod prep compound amod pobj
+ROOT advmod xcomp advmod cc conj advmod amod dobj
+ROOT acomp amod dobj cc conj advmod advmod
+ROOT advmod cc conj advmod amod dep
+ROOT advmod cc conj
+ROOT advmod cc conj advmod dep
+ROOT advmod advmod cc conj acomp dep
+ROOT advmod advcl advmod cc conj advmod
+ROOT advmod advmod cc conj advmod
+ROOT prep amod pobj prep pcomp advmod
+ROOT advmod xcomp mark advcl advmod
+ROOT advmod advcl cc conj advmod
+ROOT advmod cc conj acomp
+ROOT advmod cc conj advmod
+ROOT amod dobj cc conj advmod amod pobj
+ROOT advmod cc conj advmod conj advmod
+auxpass ROOT dobj cc auxpass conj advmod
+ROOT advmod advmod advmod cc conj advmod
+ROOT prep amod pobj cc conj advmod advmod advmod
+ROOT advmod amod pobj cc conj advmod advmod advmod
+nsubj ROOT dobj prep pcomp advmod advmod advmod
+ROOT advmod advcl prep pcomp prep advmod
+ROOT advmod amod pobj cc conj amod dobj
+ROOT advmod advmod advmod cc conj advmod advmod advmod
+ROOT dobj cc conj amod dobj
+auxpass ROOT prep pobj advmod oprd
+ROOT amod amod npadvmod prep pobj advmod dep advmod
+ROOT advmod conj dobj cc conj advmod advmod
+ROOT advmod dobj cc conj advmod advmod
+ROOT prep pcomp amod pobj
+ROOT acomp cc conj amod amod dobj
+ROOT prt amod pobj cc conj advmod advmod advmod
+ROOT prt advmod cc conj advmod amod npadvmod
+ROOT prt amod dobj prep pobj advmod dep advmod
+ROOT acomp amod nsubj prep pobj advmod dep advmod
+ROOT advmod advmod advmod prep pobj prep amod pobj
+ROOT advmod amod dobj prep pcomp advmod
+ROOT advmod prep pobj advcl oprd
+ROOT advmod acl prep compound pobj
+ROOT advmod cc conj prep amod pobj
+nsubj advmod ROOT dobj cc conj
+ROOT acomp advmod cc conj advmod dep advmod
+ROOT cc conj advmod
+ROOT advmod advcl prep pobj advmod advmod advmod
+nsubj ROOT dobj prep pcomp advmod amod dobj
+ROOT advmod xcomp advmod prep pobj advcl advmod
+nsubj ROOT advmod prep compound pobj
+nsubj advmod ROOT advmod prep pobj advmod advmod advmod
+nsubj ROOT advmod cc conj advmod advmod
+nsubj ROOT cc conj advmod advcl
+ROOT advmod prep pobj pobj
+auxpass ROOT oprd prep compound pobj
+ROOT advmod advmod advmod cc auxpass conj oprd
+compound nsubj prep pcomp advmod ROOT advmod
+ROOT amod dobj mark advcl prt amod dobj
+ROOT advmod mark advcl advmod advmod advmod
+ROOT advmod advmod advmod cc conj advmod advmod advmod
+ROOT prep pcomp advmod
+nsubj advmod ROOT advmod cc conj advmod
+ROOT amod dobj cc conj advmod dep
+nsubj ROOT dobj prep pobj advmod conj
+ROOT advmod cc conj advmod advcl
+ROOT amod dobj prep pobj
+ROOT prep pobj
+ROOT cc conj advmod advmod
+ROOT advmod xcomp prep pcomp advmod
+ROOT advmod npadvmod prep pobj conj advmod
+ROOT advmod advmod advmod cc conj advmod advmod advmod
+ROOT advmod xcomp advmod mark advcl advmod advmod advmod
+ROOT acl advmod cc conj advmod npadvmod
+ROOT amod dobj mark advcl advmod advmod advmod
+ROOT advmod cc conj acomp advmod advmod
+ROOT cc auxpass conj oprd
+ROOT advmod advmod cc conj amod amod dobj
+ROOT amod amod npadvmod prep pobj advmod advmod advmod
+ROOT advmod xcomp advmod prep pobj advcl advmod
+ROOT advmod advmod advmod cc conj advmod amod dep
+ROOT advmod advmod prep pobj advmod advmod advmod
+nsubj acl advmod cc conj acomp ROOT oprd
+ROOT amod npadvmod mark advcl advmod amod pobj
+nsubj acl advmod cc conj advmod ROOT advmod
+ROOT advmod amod dobj mark advcl advmod dep
+ROOT advmod amod pobj prep pcomp advmod advmod
+nsubj advmod ROOT dobj cc conj advmod advmod
+ROOT amod dobj cc conj advmod amod pobj
+ROOT advmod advmod advmod cc conj acomp
+ROOT acomp advcl cc conj advmod amod pobj
+nsubj ROOT dobj prep pcomp advmod oprd
+ROOT amod dobj mark advcl advmod dep
+ROOT amod dobj cc conj advmod
+ROOT advmod advmod advmod prep pobj advmod advmod advmod
+ROOT advmod advmod advmod prep pobj advmod dep advmod
+ROOT prt amod pobj cc conj amod amod dobj
+ROOT advmod xcomp advmod prep pcomp amod amod npadvmod
+ROOT advmod advmod advmod cc conj acomp conj advmod
+nsubj ROOT oprd
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod advmod mark advcl advmod dep advmod
+ROOT amod amod dobj prep pcomp prep amod pobj
+ROOT advmod xcomp advmod cc conj advmod advmod advmod
+ROOT advmod cc auxpass conj
+nsubj advmod ROOT dobj mark auxpass advcl
+nsubj ROOT mark pobj advcl
+nsubj ROOT advmod cc auxpass conj advmod
+ROOT advmod advmod advmod cc conj advmod advmod advmod
+ROOT advmod prep pcomp advmod advmod
+ROOT prep advmod cc conj advmod dep
+ROOT prep amod pobj prep pobj advmod advmod
+ROOT amod amod nsubj cc conj conj advmod
+ROOT amod dobj mark advcl advmod dep
+ROOT amod amod dobj cc conj advmod dep advmod
+ROOT amod dobj cc conj amod dobj
+ROOT advmod dobj cc conj amod amod oprd
+ROOT advmod advmod advmod prep pobj conj advmod
+ROOT amod dobj prep pcomp advmod advmod
+ROOT advmod xcomp mark auxpass advcl
+ROOT acl mark advcl advmod
+ROOT advmod advmod advmod cc conj advmod advcl
+nsubj advmod ROOT dobj prep compound pobj
+nsubj ROOT advmod
+ROOT prt amod pobj cc conj acomp advmod advmod
+ROOT advmod advmod advmod prep compound pobj
+ROOT advmod amod pobj cc conj advmod npadvmod
+ROOT amod dobj cc conj
+nsubj ROOT advmod cc conj advmod
+ROOT advmod advmod advmod prep pobj advmod advmod
+ROOT advmod dobj cc conj advmod conj advmod
+ROOT advmod advmod advmod cc conj advmod amod pobj
+nsubj ROOT advmod cc conj advmod conj advmod
+nsubj ROOT dobj cc conj advmod advmod advmod
+ROOT advmod advmod advmod cc conj advmod
+ROOT advmod advmod cc conj conj oprd
+ROOT advmod advmod prep pobj advmod pobj
+ROOT amod dobj cc conj dobj
+ROOT advmod prep pobj npadvmod dep
+compound ROOT cc conj dobj
+nsubj advmod ROOT advmod prep pobj advmod advmod advmod
+ROOT advmod advmod prep pobj
+ROOT advmod prep pobj prep amod pobj
+ROOT advmod amod pobj prep pcomp amod amod pobj
+ROOT prep amod pobj cc conj advmod dep
+ROOT advmod advmod advmod cc conj advmod
+ROOT advmod amod pobj prep compound pobj
+ROOT prep amod pobj prep pobj advmod advmod advmod
+ROOT advmod prep pobj advmod conj advmod
+ROOT amod amod npadvmod mark nsubj advcl oprd
+ROOT acomp cc conj advmod
+ROOT advmod advmod advmod cc conj amod amod dobj
+nsubj advmod ROOT advmod prep compound pobj
+ROOT prt advmod advmod prep pobj advmod advmod
+nsubj advmod ROOT advmod cc compound conj
+ROOT prt advcl cc conj advmod advmod
+ROOT advmod advmod advmod prep pobj npadvmod
+ROOT advmod advmod advmod mark advcl advmod
+nsubjpass cc conj advmod ROOT
+ROOT advmod advmod prep pcomp advmod
+nsubj advmod ROOT advmod advmod advcl advmod amod dobj
+ROOT advmod amod dobj cc conj advmod dep advmod
+ROOT advmod amod dobj prep pcomp advmod pobj
+nsubj ROOT dobj cc conj advmod amod dobj
+ROOT prt amod dobj cc conj advmod dep
+ROOT advmod advmod advmod cc conj dep
+ROOT amod amod npadvmod prep pobj advmod advmod
+ROOT advmod cc conj advmod amod dobj
+ROOT advmod amod pobj cc conj acomp conj advmod
+ROOT advmod amod pobj cc conj acl
+ROOT advmod advmod advmod prep pobj advmod
+nsubj ROOT dobj cc conj
+ROOT advmod advmod advmod cc conj advmod amod dep
+ROOT acl advmod cc conj advmod advmod
+ROOT advmod advmod advmod cc conj acl advmod
+ROOT mark advcl prt advmod
+ROOT advmod advmod prep pobj dep
+ROOT advmod amod dobj mark pobj advcl advmod
+ROOT acomp amod nsubj prep pcomp amod amod npadvmod
+nsubj ROOT dobj prep pcomp advmod conj advmod
+ROOT advmod dep prep compound pobj
+ROOT amod amod dobj cc conj advmod advcl
+ROOT advmod cc conj conj oprd
+ROOT advmod advmod prep compound amod pobj
+nsubj ROOT dobj cc conj acomp advmod advmod
+ROOT advmod dobj cc conj advmod
+ROOT dobj prep pcomp advmod advmod
+ROOT acomp advmod cc conj amod dobj
+ROOT prt amod pobj cc conj advmod advmod
+nsubj ROOT advmod prep pobj advmod amod dobj
+ROOT advmod dep advmod prep pobj advmod dep advmod
+ROOT prt amod dobj cc auxpass conj advmod
+ROOT advmod cc conj advmod advmod advmod
+ROOT advmod acomp cc conj conj advmod
+ROOT advmod dep advmod cc conj amod amod dobj
+ROOT advmod acl prep pobj advmod amod pobj
+ROOT amod dobj mark advcl advmod amod dobj
+ROOT advmod amod dobj prep pcomp advmod advmod
+nsubj ROOT cc conj
+compound nsubjpass cc conj advmod ROOT
+ROOT advmod dep cc conj advmod conj advmod
+ROOT advmod amod dobj prep pcomp advmod advmod
+ROOT acl prep pobj advmod advmod
+nsubj ROOT dobj cc conj advmod advmod advmod
+ROOT prt amod dobj cc conj conj advmod
+nsubj advmod ROOT advmod cc conj advmod advmod advmod
+ROOT advmod advmod advmod cc conj amod amod npadvmod
+ROOT advmod amod pobj mark advcl advmod
+ROOT advmod advmod prep compound pobj
+ROOT advmod prep pobj advmod
+ROOT advmod dep advmod cc auxpass conj
+ROOT advmod dep prep pobj advmod amod pobj
+ROOT advmod cc conj advmod conj advmod
+ROOT advmod xcomp prep pobj advmod amod dobj
+ROOT advmod amod pobj prep pobj
+ROOT acomp acomp cc conj conj oprd
+ROOT advmod dobj cc conj acomp conj advmod
+nsubj ROOT cc conj advmod advmod advmod
+ROOT advmod advmod advmod prep pobj advmod
+nsubj ROOT advmod prep compound pobj
+nsubj acl advmod prep pobj ROOT advmod
+ROOT advmod amod dobj prep pcomp advmod advmod
+ROOT prep pobj advmod advmod
+nsubj acl advmod prep pcomp advmod ROOT dobj
+nsubj ROOT dobj prep pcomp advmod advmod
+ROOT npadvmod mark advcl amod dobj
+ROOT advmod prep pobj advmod advcl advmod
+ROOT advmod advmod advmod cc conj advmod conj advmod
+ROOT advmod dep prep pobj advmod advmod
+ROOT advmod amod dobj prep pobj advmod dep advmod
+ROOT advmod amod dobj prep pobj advmod advmod
+nsubj advmod acl prep pobj advmod ROOT oprd
+advcl advmod ROOT advmod prep pobj advmod advcl
+ROOT advmod advmod advmod cc conj prt amod dobj
+ROOT advmod advmod cc conj advmod advmod advmod
+ROOT acomp advmod prep pobj advmod advmod advmod
+ROOT advmod advmod cc conj dep
+ROOT advmod advmod advmod cc conj amod amod dobj
+ROOT advmod cc conj amod amod npadvmod
+ROOT advmod advmod advmod cc conj advmod npadvmod
+nsubj advmod ROOT advmod prep pobj advmod conj advmod
+nsubj ROOT dobj prep compound pobj
+ROOT prt amod dobj prep pobj
+ROOT advmod xcomp advmod cc conj advmod dep
+nsubj ROOT dobj cc conj acomp advmod
+ROOT advmod advmod advmod cc conj advmod amod dobj
+ROOT advmod prep pcomp prep advmod
+ROOT advmod amod pobj prep pcomp advmod advcl advmod
+ROOT amod amod npadvmod prep pcomp advmod
+ROOT cc conj advmod intj
+ROOT advmod dep dobj mark pobj advcl oprd
+ROOT advmod advmod advmod cc conj advmod amod dobj
+ROOT advmod amod dobj cc conj advmod advmod advmod
+ROOT advmod advmod cc conj dobj
+nsubj ROOT cc conj acomp conj advmod
+ROOT advmod advmod advmod prep compound amod pobj
+ROOT advmod dep prep pobj advmod dep advmod
+nsubj ROOT dobj prep pcomp advmod
+nsubj ROOT dobj cc conj amod amod dobj
+ROOT advmod advmod advmod cc conj amod dobj
+ROOT advmod dep advmod cc conj advmod conj advmod
+compound nsubj mark ROOT prep amod pobj
+ROOT advmod advmod prep pobj advmod advmod
+ROOT advmod advmod cc conj advmod
+ROOT prep pobj advmod advcl
+ROOT advmod advmod advmod mark advcl advmod advmod advmod
+nsubj ROOT dobj cc conj advmod advmod
+ROOT amod dobj cc conj prep amod pobj
+ROOT advmod prep pobj advmod amod npadvmod
+ROOT advmod dep advmod mark advcl amod dobj
+ROOT amod amod dobj prep pobj advmod advcl
+nsubj advmod ROOT advmod cc conj advmod amod dobj
+ROOT amod dobj prep pcomp advmod
+ROOT advmod advmod cc conj prep amod pobj
+ROOT dobj cc conj advmod
+ROOT advmod advmod advmod prep pcomp advmod advmod advmod
+compound ROOT cc conj advmod advmod advmod
+ROOT cc conj advmod advmod advmod
+ROOT advmod advmod advmod cc conj advmod advmod advmod
+ROOT advmod dep dobj prep pobj advmod amod pobj
+ROOT advmod advmod prep pcomp amod amod npadvmod
+ROOT advmod amod dobj cc conj amod amod dobj
+ROOT advmod advmod prep pobj advcl advmod
+ROOT acl prep pobj advmod amod oprd
+ROOT advmod advmod cc conj
+ROOT prt advmod cc conj amod dobj
+ROOT advmod amod pobj cc auxpass conj oprd
+auxpass ROOT dobj cc conj advmod advmod
+ROOT prep amod pobj cc conj acomp conj advmod
+ROOT advmod advmod cc conj advmod
+ROOT acomp advmod cc conj advmod amod dobj
+ROOT prep amod pobj mark auxpass advcl advmod
+nsubj ROOT advmod cc conj advmod amod dobj
+ROOT advmod cc conj advmod dep advmod
+ROOT advmod advmod advmod mark auxpass advcl advmod
+nsubj advmod ROOT advmod prep pobj advmod advmod
+ROOT advmod cc conj advmod advmod
+ROOT amod amod dobj prep pcomp advmod amod dobj
+ROOT acl advmod cc conj dobj
+ROOT prep pcomp amod amod pobj
+ROOT advmod cc conj acomp dep
+nsubj ROOT dobj cc conj advmod conj advmod
+ROOT advmod advmod cc conj dep
+ROOT amod advmod cc conj amod amod dobj
+ROOT advmod advmod advmod advcl prt amod dobj
+ROOT cc conj advmod advmod advmod
+ROOT prt amod dobj prep pcomp advmod advcl advmod
+ROOT amod dobj cc conj acomp dep
+ROOT advmod amod pobj prep pcomp prep amod pobj
+ROOT dobj cc conj prep amod pobj
+ROOT acomp cc conj dobj
+ROOT advmod prep pobj advmod advmod advmod
+auxpass ROOT dobj prep pobj advmod amod pobj
+ROOT advmod amod npadvmod prep pobj advmod dep advmod
+ROOT amod dobj prep pobj amod npadvmod
+ROOT advmod xcomp advmod cc conj
+ROOT prep pobj advmod advcl advmod
+ROOT advmod acl prep pobj pobj
+ROOT advmod xcomp prep pobj advmod dep
+ROOT advmod cc conj advmod advmod
+ROOT advmod amod dobj cc conj advmod amod pobj
+ROOT advmod advcl cc conj advmod advmod advmod
+ROOT advmod amod dobj cc conj conj oprd
+ROOT advmod advmod advmod prep pcomp advmod
+ROOT advmod mark advcl advmod amod pobj
+ROOT dobj cc conj advmod advmod
+ROOT advmod advcl prep compound amod pobj
+nsubj advmod ROOT advmod cc conj dobj
+ROOT acl prep pobj advmod advmod
+ROOT advmod advmod prep pcomp amod pobj
+ROOT prt amod pobj cc conj advmod conj advmod
+nsubj ROOT dobj cc conj dobj
+ROOT advmod prep pobj advcl advmod
+nsubj advmod ROOT advmod prep pobj advmod advmod
+ROOT advmod cc conj dobj
+nsubj ROOT advmod
+ROOT advmod amod pobj prep pobj advmod advcl advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod advmod cc conj advmod amod npadvmod
+ROOT advmod advmod advmod mark advcl prep amod pobj
+compound nsubj prep pobj ROOT advmod
+ROOT advmod dep
+ROOT advmod xcomp advmod prep pobj conj advmod
+ROOT advmod advmod advmod prep pcomp amod amod npadvmod
+ROOT advmod dep advmod cc conj advmod
+nsubj ROOT prep pcomp advmod
+ROOT advmod amod pobj prep pobj
+ROOT cc conj advmod
+nsubj advmod ROOT advmod prep pobj advmod advmod
+ROOT amod amod npadvmod mark advcl advmod advmod advmod
+ROOT advmod amod pobj prep pcomp advmod advcl advmod
+ROOT acl prep pcomp prep amod pobj
+ROOT advmod advmod prep pobj advcl advmod
+nsubj ROOT dobj cc conj advmod advcl
+advcl acomp ROOT advmod prep pcomp advmod npadvmod
+ROOT prt advcl cc conj advmod advmod
+ROOT advmod acomp cc conj advmod advmod advmod
+ROOT advmod advcl cc conj advmod advmod
+ROOT advmod advmod prep advcl amod dobj
+ROOT advmod dep prep pobj advmod advmod advmod
+compound ROOT cc conj intj
+ROOT advmod xcomp advmod prep pcomp advmod amod dobj
+ROOT advmod advmod prep pcomp advmod amod npadvmod
+nsubj advmod ROOT dobj mark advcl advmod oprd
+nsubj advmod ROOT dobj prep pobj
+ROOT amod dobj prep pcomp advmod
+nsubj advmod ROOT dobj prep pobj amod amod punct
+nsubj advmod advcl cc conj advmod ROOT dobj
+ROOT prep amod pobj prep pcomp advmod advcl advmod
+ROOT prep pobj prep amod pobj
+nsubj advmod ROOT advmod prep compound pobj
+ROOT advmod advmod prep pcomp prep amod pobj
+ROOT cc conj advmod
+ROOT advmod advcl cc conj
+ROOT advmod amod dobj cc conj advmod advmod advmod
+compound ROOT cc conj prep amod pobj
+ROOT prt amod dobj prep pobj advmod advcl
+ROOT advmod advmod advmod cc conj
+ROOT advmod prep pcomp advmod advmod advmod
+ROOT advmod xcomp advmod cc compound dobj
+nsubj ROOT advmod cc compound conj
+auxpass ROOT advmod cc auxpass conj oprd
+ROOT advmod mark pobj advmod advcl
+ROOT advmod prep pobj pobj
+ROOT dobj cc conj advmod
+ROOT prt advmod cc conj acomp amod npadvmod
+nsubj ROOT advmod cc conj advmod advmod
+ROOT prt advmod advmod prep pobj amod dobj
+advcl advmod ROOT advmod prep pcomp advmod
+ROOT prep amod pobj cc conj conj advmod
+auxpass ROOT advmod prep compound pobj
+ROOT prep amod pobj prep pobj advmod advmod
+ROOT prt advmod advmod prep dep amod dobj
+ROOT advmod advcl cc conj advmod conj advmod
+ROOT advmod dep cc conj advmod advmod advmod
+ROOT amod dobj cc conj advmod dep advmod
+ROOT advmod acl prep pobj advmod
+ROOT advmod advcl cc conj dep
+ROOT acomp cc conj advmod
+ROOT advmod advmod prep pobj advmod advmod advmod
+ROOT advmod npadvmod mark advcl advmod conj advmod
+ROOT amod amod dobj cc conj advmod npadvmod
+compound nsubj mark ROOT advmod advmod
+ROOT advmod xcomp advmod prep pcomp amod amod npadvmod
+nsubj ROOT advmod cc conj acomp advcl
+ROOT advmod amod pobj cc conj
+ROOT advmod advmod mark advcl advmod
+ROOT advmod advcl cc conj advmod oprd
+ROOT amod npadvmod prep pobj advmod amod dobj
+ROOT advmod advmod advmod prep pobj advmod amod pobj
+ROOT advmod advcl prep pobj advmod advmod
+ROOT acl prep compound pobj
+ROOT prep pobj advcl
+ROOT npadvmod mark pobj advcl advmod
+ROOT advmod prep compound pobj
+ROOT advmod advmod advmod cc conj advmod npadvmod
+ROOT amod advmod cc conj advmod advmod advmod
+nsubj advmod ROOT advmod prep pobj advmod advmod
+ROOT advmod advmod advmod prep pobj dep
+ROOT prt amod dobj cc conj advmod amod dobj
+nsubj ROOT dobj mark advcl advmod
+ROOT advmod xcomp advmod prep pobj advmod amod dobj
+ROOT advmod amod pobj cc conj advmod amod dobj
+nsubj ROOT dobj cc auxpass conj
+ROOT advmod xcomp prep pcomp prep advmod
+ROOT amod amod npadvmod mark pobj advcl advmod
+ROOT acomp dep advmod cc conj advmod
+nsubj ROOT dobj cc conj amod amod npadvmod
+nsubj ROOT dobj cc conj advmod npadvmod
+nsubj advmod ROOT dobj cc conj advmod amod pobj
+nsubj advmod ROOT cc conj advmod conj advmod
+nsubj ROOT dobj cc conj advmod advcl
+ROOT advmod dep advmod cc conj prep amod pobj
+ROOT advmod advmod prep pobj advmod advmod
+ROOT acl prep pobj advmod
+ROOT acomp dep advmod cc conj advmod advmod
+ROOT advmod dep prep compound pobj
+nsubj ROOT dobj cc conj advmod advmod advmod
+compound ROOT cc conj advmod advmod
+nsubj ROOT dobj prep pcomp prep amod pobj
+ROOT advmod advmod advmod mark advcl advmod dep
+ROOT cc conj amod amod dobj
+nsubj advmod ROOT advmod cc conj prt amod pobj
+nsubj advmod ROOT dobj cc conj conj advmod
+ROOT advmod dep prep pobj advmod advmod
+ROOT advmod dep advmod cc conj acomp advmod
+ROOT advmod amod pobj mark advcl advmod advmod
+ROOT advmod advmod advmod mark advcl advmod advmod advmod
+ROOT advmod prep pobj advmod
+ROOT advmod advmod cc conj acomp dep
+ROOT prep pobj advcl
+ROOT amod dobj prep pobj advmod
+ROOT advmod advmod mark nsubj advcl advmod
+ROOT advmod amod pobj cc conj advmod advmod
+ROOT advmod advmod cc conj advmod npadvmod
+nsubj ROOT advmod cc conj advmod dep
+nsubj advmod ROOT advmod prep pobj prt amod pobj
+ROOT advmod advcl advmod cc conj advmod dep advmod
+ROOT advmod dep prep pcomp prep amod pobj
+ROOT advmod advmod advmod cc conj advmod advmod
+ROOT amod dobj cc conj acomp amod npadvmod
+ROOT advmod conj cc conj conj oprd
+ROOT advmod advmod advmod cc conj advmod advmod advmod
+ROOT advmod dep cc conj advmod dep advmod
+compound ROOT cc conj
+ROOT advmod advcl advmod cc conj advmod advmod
+ROOT advmod cc conj advmod dep advmod
+nsubj ROOT dobj prep pobj advmod advmod advmod
+ROOT advmod advmod prep pcomp advmod advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT acomp advmod cc conj advmod dep advmod
+ROOT advmod advmod advmod cc conj advmod advmod
+ROOT acl advmod mark pobj advcl
+ROOT advmod dep cc conj amod dobj
+ROOT advmod npadvmod prep pcomp advmod dep advmod
+ROOT amod amod dobj cc conj conj oprd
+ROOT advmod xcomp prep pcomp advmod
+ROOT advmod amod npadvmod mark advcl advmod advmod advmod
+ROOT advmod advmod cc conj amod amod dobj
+ROOT prt advmod cc conj advmod amod pobj
+ROOT amod amod dobj cc conj advmod advmod advmod
+ROOT advmod amod dobj cc auxpass conj
+ROOT mark pobj advcl
+nsubj ROOT prep pobj amod amod npadvmod
+ROOT advmod amod pobj prep pcomp advmod pobj
+compound ROOT cc conj amod amod appos
+ROOT advmod prep pobj advmod
+ROOT prep amod pobj prep pobj advcl advmod
+nsubj ROOT cc conj acomp amod oprd
+nsubj advmod ROOT dobj cc conj advmod amod dobj
+ROOT advmod advmod advmod cc conj acomp conj advmod
+ROOT prt advmod cc conj amod amod dobj
+ROOT advmod amod dobj cc conj prep amod pobj
+ROOT amod dobj prep pobj advcl advmod
+nsubj advmod ROOT advmod prep pobj advmod amod dobj
+ROOT advmod advcl cc conj advmod conj
+ROOT advmod dep prep pobj prep amod pobj
+ROOT advmod advcl mark advcl advmod
+ROOT advmod dep advmod cc conj amod amod dobj
+ROOT advmod amod pobj mark advcl advmod advmod
+ROOT amod dobj cc conj advmod amod dobj
+nsubj advmod ROOT advmod prep pobj advmod advcl
+nsubj advmod ROOT dobj cc conj
+ROOT advmod prep pobj advmod amod npadvmod
+ROOT prt advmod cc conj
+nsubj ROOT cc conj acomp conj advmod
+nsubj acl advmod prep pobj advmod ROOT advmod
+ROOT amod amod dobj mark pobj advcl
+nsubj advmod ROOT dobj mark nsubj advcl advmod
+ROOT advmod advmod advmod prep pobj advmod dep advmod
+ROOT prt advmod cc conj advmod dep advmod
+ROOT advmod amod pobj prep pcomp advmod amod pobj
+ROOT advmod advmod advmod cc conj dep
+ROOT acomp amod nsubj prep pcomp amod amod npadvmod
+ROOT prt amod dobj cc conj advmod advcl
+ROOT amod dobj cc conj prep amod pobj
+ROOT advmod advmod prep pobj pobj
+ROOT advmod xcomp prep pobj advmod advmod
+ROOT advmod advmod advmod cc conj acomp dep
+nsubj advmod ROOT advmod prep pobj advcl advmod
+ROOT prt amod dobj prep pcomp advmod advmod advmod
+ROOT advmod advmod cc conj advmod
+auxpass ROOT mark advcl advmod
+nsubj ROOT cc conj dobj
+ROOT amod amod dobj cc conj advmod advmod
+ROOT advmod advmod mark advcl advmod
+ROOT amod amod npadvmod prep pobj advmod advcl advmod
+ROOT amod dobj mark advcl prep amod pobj
+ROOT advmod advmod advmod cc conj advmod advmod
+ROOT advmod advcl cc conj advmod advmod
+nsubj advmod ROOT advmod cc conj advmod advmod
+ROOT prep amod pobj cc conj advmod advmod advmod
+nsubj ROOT cc conj amod dobj
+advcl advmod ROOT advmod prep pobj advmod
+ROOT amod dobj mark advcl advmod advmod
+nsubj ROOT dobj cc conj prt advmod advmod
+ROOT cc conj advmod advmod advmod
+ROOT advmod advmod cc conj amod dobj
+ROOT prt advmod cc auxpass conj advmod
+ROOT advmod advmod advmod prep pobj advmod pobj
+ROOT advmod advmod mark auxpass advcl advmod
+ROOT advmod dep advmod cc conj amod dobj
+ROOT amod amod dobj prep pobj advmod advcl advmod
+ROOT advmod dep cc conj
+ROOT advmod amod pobj cc conj advmod npadvmod
+ROOT amod dobj cc conj
+ROOT amod amod npadvmod mark advcl advmod advmod
+ROOT advmod advmod cc compound conj
+ROOT advmod amod pobj prep pcomp advmod amod pobj
+ROOT advmod advmod prep pobj dep
+ROOT advmod prep pobj advmod conj advmod
+ROOT prep amod pobj cc conj amod dobj
+ROOT advmod advmod prep pobj advmod pobj
+nsubj ROOT advmod prep pobj advmod advmod advmod
+ROOT amod dobj cc conj advmod amod pobj
+ROOT advmod advmod prep pobj advmod pobj
+ROOT advmod dep advmod prep pcomp prep amod pobj
+ROOT advmod advmod prep pcomp advmod advmod advmod
+ROOT prep amod pobj mark advcl amod amod dobj
+nsubj ROOT cc conj advmod conj advmod
+ROOT advmod amod dobj mark advcl advmod
+ROOT acomp amod dobj cc conj advmod amod dobj
+nsubj acl advmod prep ROOT amod dobj
+ROOT prep pobj advmod dep advmod
+ROOT advmod advmod prep pobj
+ROOT advmod advmod prep pobj advmod advmod advmod
+ROOT amod dobj cc conj
+ROOT amod amod npadvmod prep pcomp advmod amod npadvmod
+ROOT advmod cc conj advmod conj advmod
+ROOT advmod advmod cc conj advmod advmod advmod
+ROOT dobj prep pobj
+ROOT advmod dep prep pobj advmod amod pobj
+ROOT amod amod dobj cc compound conj
+ROOT advmod advmod cc conj advmod amod dobj
+ROOT amod dobj cc auxpass conj oprd
+ROOT advmod advcl prep pobj advmod conj advmod
+ROOT advmod advmod advmod prep pobj
+advcl advmod ROOT advmod prep pobj
+nsubj ROOT dobj cc conj advmod npadvmod
+ROOT advmod amod pobj cc conj amod amod dobj
+ROOT advmod advmod advmod cc conj advmod dep advmod
+ROOT advmod amod pobj prep pcomp amod amod npadvmod
+nsubj ROOT cc conj advmod advmod advmod
+nsubj advmod ROOT dobj cc conj dobj
+ROOT amod amod dobj cc conj advcl advmod
+ROOT cc conj advmod
+ROOT advmod acl prep pobj advmod dep
+ROOT advmod amod dobj cc conj advmod dep advmod
+nsubj ROOT cc conj advmod amod pobj
+ROOT advmod advcl advmod prep pobj advmod advmod advmod
+ROOT amod dobj prep pcomp advmod advmod advmod
+ROOT advmod advmod advmod prep pcomp advmod advmod advmod
+ROOT advmod advmod advmod prep pobj advmod amod pobj
+ROOT advmod acl prep pobj advmod advmod
+ROOT advmod amod dobj prep pobj advmod dep advmod
+ROOT dobj mark advcl advmod advmod
+ROOT advmod dep dobj mark advcl advmod
+ROOT advmod advmod advmod prep compound pobj
+nsubj acl advmod prep pobj ROOT advmod advmod
+ROOT advmod cc conj acl advmod
+ROOT amod amod dobj prep pcomp advmod advcl advmod
+ROOT acomp amod dobj cc conj amod amod npadvmod
+nsubj mark ROOT advmod
+ROOT amod amod dobj cc conj conj advmod
+ROOT advmod dep advmod cc conj advmod advmod advmod
+ROOT advmod advmod cc conj dobj
+ROOT dobj cc conj advmod dep
+ROOT amod amod npadvmod prep pcomp advmod advmod advmod
+ROOT advmod advmod cc conj advmod dep advmod
+ROOT prt advmod advmod prep pcomp prep amod pobj
+ROOT amod dobj prep pcomp advmod conj
+nsubj ROOT advmod prep pobj advmod advmod advmod
+ROOT advmod xcomp advmod cc compound dep
+ROOT dobj prep pobj advmod advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT dobj prep pobj
+nsubj advmod ROOT advmod prep pobj advmod conj advmod
+ROOT dobj cc conj advmod amod pobj
+ROOT advmod advcl cc conj ROOT
+ROOT advmod advmod advmod cc conj dep
+nsubj ROOT cc conj advmod advmod
+ROOT advmod advcl advmod advmod advcl advmod amod dobj
+advcl advmod ROOT advmod prep pobj advmod advcl
+ROOT amod dobj mark advcl advmod amod pobj
+ROOT advmod amod pobj cc conj advmod amod npadvmod
+compound nsubj prep pobj ROOT advmod
+ROOT dobj prep pcomp advmod pobj
+ROOT amod amod dobj cc conj advmod advmod
+ROOT amod dobj cc conj prep amod pobj
+ROOT advmod dobj cc conj advmod advmod advmod
+ROOT prep amod pobj cc auxpass conj oprd
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod advmod prep pobj advmod advmod
+ROOT advmod advcl cc conj advmod advmod advmod
+ROOT advmod dep prep pobj advmod pobj
+nsubj ROOT cc conj advmod conj advmod
+ROOT dobj cc conj advmod
+nsubj advmod ROOT advmod cc conj advmod
+ROOT advmod advmod cc conj advmod
+auxpass ROOT mark advcl advmod advmod advmod
+ROOT advmod advmod prep pobj advmod amod npadvmod
+ROOT dobj cc auxpass conj
+ROOT prep amod pobj prep pobj pobj
+ROOT advmod advmod cc conj advmod
+ROOT advmod xcomp prep pobj advmod dep
+ROOT amod dobj mark advcl prep amod pobj
+ROOT advmod advmod cc conj advmod dep
+ROOT amod advmod cc conj advmod
+ROOT advmod advmod advmod cc auxpass conj oprd
+ROOT advmod advmod cc conj advmod dep
+ROOT advmod cc conj advmod npadvmod
+ROOT advmod advmod mark advcl advmod amod pobj
+nsubj acl advmod prep pobj advmod ROOT
+ROOT advmod advmod advmod cc conj advmod advmod
+advcl acomp ROOT advmod prep pobj advmod advmod advmod
+advcl advmod ROOT advmod prep pobj advmod amod dobj
+ROOT advmod prep pobj dep
+nsubj acl prep pobj advmod ROOT advmod
+ROOT amod amod dobj prep pcomp advmod advmod advmod
+ROOT advmod dep prep pobj conj advmod
+ROOT advmod xcomp advmod prep pcomp amod amod npadvmod
+ROOT acomp amod nsubj prep pobj pobj
+nsubj ROOT dobj prep pcomp amod amod punct
+nsubj advmod amod pobj cc conj ROOT dobj
+ROOT advmod cc conj advmod advmod advmod
+compound nsubj mark ROOT advmod
+ROOT advmod prep pobj amod pobj
+ROOT acomp dep advmod cc conj prep amod pobj
+ROOT advmod advmod cc conj acomp
+ROOT amod amod dobj cc conj amod dobj
+ROOT prt amod pobj cc conj advmod advmod advmod
+auxpass ROOT advmod cc conj advmod conj advmod
+ROOT advmod advmod cc conj advmod amod pobj
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod xcomp advmod cc conj advmod amod dobj
+ROOT amod amod dobj prep pcomp advmod amod dobj
+ROOT prt amod dobj cc conj prep advmod
+ROOT advmod advmod advmod
+compound nsubj cc conj advmod ROOT advmod
+nsubj acl advmod prep pobj advmod ROOT
+ROOT advmod amod pobj cc conj amod dobj
+ROOT amod amod dobj cc conj advmod dep advmod
+ROOT acomp cc conj advmod
+ROOT prt advmod cc conj
+ROOT amod dobj cc conj advmod acomp
+ROOT advmod advmod cc conj dep
+ROOT advmod advmod advmod prep pobj amod npadvmod
+ROOT advmod advmod prep pcomp advmod advmod
+nsubj advmod ROOT advmod cc auxpass conj advmod
+ROOT advmod dep advmod cc conj advmod npadvmod
+ROOT advmod amod pobj cc conj advmod
+ROOT advmod amod dobj cc conj advmod amod dobj
+ROOT advmod advcl advmod cc conj acomp dep
+ROOT advmod advcl prep pobj conj advmod
+ROOT advmod advmod cc conj advmod
+ROOT advmod amod pobj cc conj advmod advmod advmod
+ROOT advmod amod pobj cc conj advmod
+ROOT cc conj advmod advmod
+ROOT amod dobj cc auxpass conj
+ROOT advmod advmod advmod prep pobj pobj
+ROOT advmod dep dobj mark advcl advmod
+ROOT acl advmod prep pcomp advmod
+compound ROOT prep pobj
+nsubj advmod ROOT advmod cc conj prt advmod advmod
+nsubj ROOT dobj cc conj advmod conj advmod
+ROOT advmod xcomp advmod cc conj advmod advmod advmod
+ROOT advmod mark advcl advmod dep
+ROOT advmod prep pobj amod npadvmod
+ROOT advmod advmod prep pobj pobj
+ROOT advmod advmod advmod cc conj advmod advmod
+ROOT advmod advmod mark advcl advmod
+ROOT cc conj advmod advmod
+ROOT advmod dep prep compound pobj
+ROOT amod amod npadvmod prep pobj advmod
+ROOT amod amod dobj cc conj advmod
+ROOT advmod cc conj advmod advmod
+ROOT advmod dep cc auxpass conj
+ROOT cc conj advmod advmod
+ROOT acomp advcl cc conj advmod dep advmod
+ROOT prt advmod advmod prep pobj amod amod npadvmod
+ROOT prep amod pobj cc conj amod dobj
+ROOT advmod dep mark advcl advmod
+compound nsubj mark ROOT prt advmod
+ROOT advmod dobj cc conj advmod advmod
+nsubj ROOT dobj cc conj advmod acomp
+ROOT prep compound pobj
+ROOT advmod dep advmod prep pobj
+nsubj acl advmod prep pobj advmod ROOT advmod
+ROOT advmod amod dobj cc conj advmod amod dobj
+nsubj advmod ROOT dobj prep compound pobj
+nsubj advmod ROOT advmod prep pobj advmod advcl advmod
+ROOT advmod advcl prep auxpass conj oprd
+ROOT advmod advcl cc conj advmod
+ROOT advmod dep cc conj advmod advmod
+ROOT advmod advmod prep pobj advmod advmod
+ROOT advmod cc conj amod dobj
+ROOT advmod advmod prep pobj dep oprd
+ROOT prt advmod advmod cc conj acomp
+ROOT acl advmod prep pcomp advmod advmod advmod
+ROOT advmod advmod cc conj acomp
+ROOT advmod amod npadvmod mark nsubj advcl oprd
+ROOT advmod amod dobj cc conj amod amod dobj
+ROOT advmod npadvmod mark advcl amod dobj
+nsubj advmod ROOT dobj cc conj advmod advcl
+ROOT advmod advmod cc conj xcomp advmod
+nsubj advmod ROOT advmod cc conj amod amod dobj
+ROOT advmod advmod cc conj advmod advmod advmod
+ROOT advmod amod pobj cc conj advmod npadvmod
+ROOT prep pobj advmod amod dobj
+ROOT advmod amod dobj cc conj advmod dep advmod
+ROOT advmod advmod mark auxpass advcl oprd
+ROOT advmod acl prep pobj advmod advmod advmod
+ROOT advmod advmod advmod cc conj conj advmod
+nsubj acl cc conj ROOT dobj
+ROOT advmod advmod prep conj advmod advmod advmod
+ROOT amod amod dobj cc conj dep
+auxpass ROOT dobj cc conj advmod advmod
+nsubj ROOT advmod prep pobj advmod advmod advmod
+ROOT advmod advcl cc conj prep amod pobj
+ROOT advmod advmod cc conj prt advmod
+ROOT advmod advmod advmod mark pobj advmod advcl advmod
+advcl advmod ROOT advmod prep pcomp prep advmod
+nsubj advmod ROOT advmod cc conj advmod conj advmod
+advcl advmod ROOT advmod prep pobj prep amod pobj
+ROOT amod amod dobj cc conj advmod amod pobj
+ROOT advmod advmod prep compound pobj
+ROOT prt amod dobj prep pcomp amod pobj
+ROOT advmod prep pobj advmod advmod
+ROOT amod amod dobj cc conj advmod amod dobj
+ROOT advmod amod pobj cc conj advcl oprd
+ROOT advmod advmod advmod prep pcomp amod amod pobj
+ROOT advmod amod pobj mark advcl advmod advmod
+nsubj ROOT advmod cc conj advmod advmod advmod
+ROOT advmod advcl cc conj advmod amod dobj
+ROOT advmod advmod prep pcomp advmod conj advmod
+ROOT amod advmod cc conj advmod advmod
+nsubj ROOT advmod cc auxpass conj advmod
+nsubj ROOT advmod cc conj amod dobj
+nsubj advmod ROOT advmod cc conj prt advmod
+nsubj acl advmod prep pobj advmod ROOT
+ROOT advmod advmod advcl prt advmod
+nsubj ROOT cc conj advmod
+ROOT advmod advmod cc conj advmod dep
+nsubj ROOT advmod prep pobj advcl oprd
+compound ROOT cc conj advmod advmod advmod
+ROOT advmod advcl prep pobj conj advmod
+ROOT advmod advmod cc conj advmod advmod
+ROOT advmod mark advcl advmod dep advmod
+ROOT acomp cc conj advmod amod pobj
+ROOT advmod prep auxpass conj advmod
+auxpass ROOT advmod cc conj advmod advmod advmod
+ROOT prep amod pobj mark advcl prt advmod advmod
+ROOT advmod xcomp advmod cc conj advmod
+ROOT advmod advmod advmod mark advcl advmod advmod advmod
+ROOT advmod advcl cc conj acomp dep
+ROOT advmod amod pobj cc conj advmod advmod
+ROOT advmod advmod cc conj advmod dep advmod
+nsubj advmod ROOT advmod prep pobj advmod conj advmod
+ROOT advmod advmod advmod prep pobj advmod dep
+ROOT prep pobj advmod
+compound nsubj mark compound ROOT
+ROOT amod amod dobj cc conj advmod advmod
+compound nsubj mark ROOT advmod advmod
+nsubj advmod ROOT advmod prep pobj advmod conj advmod
+ROOT amod dobj mark advcl amod dobj
+ROOT advmod amod npadvmod prep pobj advcl advmod
+ROOT advmod advcl cc auxpass conj oprd
+nsubj ROOT dobj prep pobj advmod amod dobj
+ROOT acomp acomp cc conj advmod acomp
+nsubj ROOT advmod prep pcomp advmod advmod advmod
+ROOT advmod prep pcomp advmod advmod advmod
+ROOT advmod cc conj amod amod npadvmod
+ROOT prt advmod advmod mark advcl advmod conj advmod
+ROOT advmod advcl advmod cc conj advmod dep
+ROOT advmod amod pobj cc conj advmod advmod advmod
+ROOT prt amod dobj cc conj
+ROOT advmod prep pcomp advmod
+ROOT advmod prep advcl acomp
+ROOT amod amod npadvmod mark advcl advmod advmod
+ROOT advmod dep advmod cc conj acomp amod npadvmod
+ROOT dobj cc conj advmod advmod
+ROOT advmod advmod prep pcomp advmod amod npadvmod
+ROOT advmod dep advmod cc conj acomp advmod advmod
+ROOT advmod advmod advmod prep pobj advmod dep
+ROOT advmod prep pobj advmod advmod
+ROOT amod amod npadvmod prep pobj advmod dep advmod
+ROOT amod dobj cc conj advmod amod dobj
+ROOT acomp cc conj advmod advmod
+ROOT prt advcl cc conj advmod advmod
+ROOT prep pobj advcl advmod
+ROOT advmod advmod prep pobj conj oprd
+ROOT advmod mark pobj advcl
+ROOT advmod advmod advmod prep pcomp advmod
+ROOT amod dobj cc conj advmod advmod advmod
+ROOT dobj cc conj advmod dep advmod
+ROOT dobj cc conj advmod advmod advmod
+ROOT prt advmod advmod prep pcomp prep amod pobj
+ROOT advmod amod pobj cc auxpass conj oprd
+ROOT advmod cc conj amod amod dobj
+ROOT amod amod npadvmod mark pobj advcl
+ROOT acl prep pcomp amod amod pobj
+nsubj ROOT cc conj advmod advmod
+nsubj ROOT cc conj advmod
+ROOT advmod advmod advmod cc conj advmod
+ROOT advmod cc conj advmod advmod
+ROOT advmod amod pobj prep pcomp advmod advcl advmod
+ROOT advmod advmod prep pobj advmod amod pobj
+ROOT advmod advmod cc conj advmod npadvmod
+ROOT mark auxpass advcl advmod
+ROOT prt advmod advmod prep pcomp amod pobj
+ROOT amod amod npadvmod mark advcl advmod advmod
+ROOT advmod cc auxpass conj
+advcl advmod ROOT advmod prep pobj advmod advmod
+ROOT advmod xcomp prep pcomp amod amod npadvmod
+ROOT advmod advmod advmod prep pobj advmod
+nsubj ROOT dobj prep pobj advmod conj advmod
+ROOT acomp cc conj advmod npadvmod
+ROOT advmod advmod advmod mark advcl advmod dep advmod
+nsubj advmod ROOT advmod cc conj advmod advmod advmod
+auxpass ROOT dobj prep pobj advmod
+ROOT advmod advmod prep compound pobj
+ROOT advmod dep cc conj advmod
+ROOT advmod advmod advmod prep pobj advcl oprd
+ROOT advmod advmod advmod prep pcomp advmod
+ROOT prt advmod cc conj advmod amod pobj
+ROOT advmod amod pobj cc conj advmod advmod
+nsubj ROOT advmod prep pobj advmod dep
+ROOT advmod amod dobj prep pcomp advmod amod dobj
+ROOT prep amod pobj prep pcomp advmod
+ROOT advmod advmod prep pobj advmod advcl
+ROOT advmod acl prep pobj advmod conj
+ROOT advmod dep advmod cc auxpass conj
+ROOT advmod dep advmod prep pobj advmod advmod
+nsubj advmod ROOT dobj prep pobj advmod amod dobj
+advcl advmod ROOT advmod prep compound pobj
+ROOT advmod dep cc conj advmod advmod advmod
+ROOT advmod advmod cc conj advmod npadvmod
+ROOT advmod advmod prep pobj advmod dep advmod
+ROOT advmod advmod advmod cc conj advmod dep advmod
+ROOT advmod advmod cc conj advmod amod pobj
+ROOT advmod advmod advmod cc conj dobj
+compound nsubj cc conj ROOT oprd
+ROOT advmod advcl cc conj advmod
+ROOT advmod cc conj advmod advmod
+ROOT advmod dep cc conj advmod advmod
+ROOT advmod advcl cc conj dep
+ROOT advmod amod dobj prep pcomp prep amod pobj
+ROOT advmod advmod cc conj advmod advmod
+ROOT prep auxpass conj oprd
+auxpass ROOT advmod prep pobj advmod dep
+ROOT advmod advmod cc conj amod dobj
+ROOT advmod advmod advmod prep pobj advmod dep advmod
+nsubj ROOT cc conj advmod
+nsubj acl prep pobj ROOT oprd
+ROOT amod amod dobj cc conj advmod amod dep
+compound ROOT prep pcomp prep amod pobj
+nsubj advmod ROOT advmod advmod advcl advmod advmod advmod
+ROOT advmod advcl cc conj advmod advmod
+ROOT advmod prep pcomp advmod advmod
+ROOT prep pcomp advmod advmod advmod
+nsubj ROOT dobj cc conj advmod amod pobj
+nsubj advmod ROOT dobj
+ROOT dobj mark pobj advcl
+ROOT advmod advmod prep pcomp prep amod pobj
+ROOT advmod dep cc conj prt advmod
+ROOT advmod dep advmod prep pobj advmod
+ROOT dobj prep pobj advmod advmod
+ROOT acomp amod nsubj mark auxpass advcl advmod
+ROOT advmod amod dobj cc conj advmod amod pobj
+ROOT advmod advmod prep pobj advmod amod npadvmod
+nsubj advmod ROOT advmod prep compound pobj
+ROOT advmod prep pobj advmod amod pobj
+ROOT advmod amod pobj prep pobj amod amod npadvmod
+ROOT advmod advmod cc conj prep amod pobj
+ROOT advmod advcl prep pobj advmod amod nsubj
+ROOT advmod xcomp advmod cc conj amod amod npadvmod
+ROOT advmod npadvmod prep pobj advmod amod pobj
+nsubj ROOT dobj cc conj advmod dep
+ROOT advmod advmod advmod prep pobj advmod amod dobj
+ROOT advmod dep prep pcomp prep amod pobj
+ROOT prt amod dobj prep pobj
+nsubj ROOT dobj mark advcl advmod
+nsubj advmod ROOT advmod prep pcomp prep advmod
+nsubj ROOT dobj cc conj amod dobj
+ROOT advmod advmod prep pobj advmod pobj
+ROOT cc conj amod amod dobj
+ROOT advmod advmod advmod cc conj advmod dep
+ROOT advmod advmod advmod mark advcl advmod dep advmod
+ROOT prep pcomp advmod amod pobj
+ROOT advmod advmod prep pobj advmod dep advmod
+ROOT advmod prep pcomp advmod amod pobj
+ROOT advmod amod dobj mark advcl advmod advmod
+ROOT advmod xcomp prep pobj advmod dep
+ROOT advmod advmod advmod prep pobj advmod dep
+nsubj ROOT dobj prep pobj
+ROOT prep amod pobj prep pcomp amod pobj
+ROOT advmod advmod prep compound pobj
+ROOT advmod dep prep pobj advmod dep
+ROOT amod advmod cc conj advmod advcl
+ROOT amod amod npadvmod prep pcomp advmod advmod advmod
+nsubj ROOT dobj prep pcomp prep amod pobj
+nsubj ROOT cc conj advmod dep
+ROOT advmod dep advmod prep pobj advmod dep advmod
+advcl advmod ROOT advmod prep pobj advmod oprd
+ROOT advmod npadvmod advmod cc conj amod dobj
+nsubj ROOT dobj cc conj advmod advcl
+advcl advmod ROOT advmod prep pobj advcl oprd
+ROOT advmod advmod prep pobj npadvmod
+ROOT advmod prep advcl amod npadvmod
+ROOT advmod dep advmod prep pobj advmod dep advmod
+ROOT acomp cc conj advmod advmod
+ROOT advmod prep pcomp advmod
+ROOT advmod amod pobj prep pcomp advmod
+ROOT advmod advmod advmod prep pobj advmod advmod advmod
+ROOT advmod dep advmod prep pobj advcl advmod
+ROOT amod dobj mark advcl advmod
+ROOT advmod advmod prep pcomp amod npadvmod
+ROOT amod amod npadvmod
+ROOT advmod advmod advmod cc conj
+ROOT advmod xcomp advmod prep pobj amod amod npadvmod
+nsubj advmod ROOT advmod cc conj advmod conj advmod
+nsubj ROOT prep pobj advmod advmod
+ROOT cc conj advmod intj
+nsubjpass cc conj ROOT
+ROOT advmod advmod advmod prep pobj
+ROOT amod amod dobj cc conj advmod dep
+ROOT advmod advmod advmod prep pobj advmod conj
+ROOT advmod xcomp advmod cc conj advmod advmod advmod
+ROOT advmod advcl advmod prep pobj
+nsubj advmod ROOT dobj cc conj advmod
+ROOT acomp amod dobj cc conj dep
+ROOT advmod xcomp prep pcomp advmod conj advmod
+nsubj ROOT dobj mark advcl advmod conj advmod
+nsubj cc conj advmod ROOT advmod
+ROOT acl cc auxpass conj advmod
+ROOT advmod advmod advmod prep pcomp advmod advmod
+ROOT advmod advmod prep pobj advmod advcl
+ROOT advmod advmod prep pcomp amod amod npadvmod
+nsubj acl prep pobj ROOT oprd
+ROOT acomp dep advmod cc conj advmod dep advmod
+ROOT dobj cc conj conj advmod
+ROOT advmod advcl cc conj advmod advmod advmod
+nsubj ROOT cc conj advmod advmod
+nsubj ROOT cc conj advmod
+ROOT prt amod dobj prep pcomp advmod advmod advmod
+ROOT advmod dep advmod cc conj advmod advmod advmod
+ROOT acl advmod cc conj acomp advmod advmod
+nsubj ROOT dobj cc conj advmod advcl
+compound ROOT prep pobj
+ROOT acomp amod dobj cc conj
+nsubj ROOT dobj prep pobj advmod advmod
+ROOT advmod advmod prep pobj advmod amod npadvmod
+ROOT dobj prep pobj advmod advmod
+ROOT prep amod pobj cc conj prt advmod
+ROOT acomp cc conj advmod advmod advmod
+nsubj ROOT dobj mark advcl amod dobj
+nsubj ROOT dobj prep pobj advcl
+ROOT advmod amod npadvmod prep pcomp advmod
+ROOT advmod amod pobj cc conj dobj
+ROOT advmod cc conj advmod advcl
+nsubj ROOT advmod cc conj advmod advcl
+ROOT amod amod npadvmod prep pobj amod amod npadvmod
+ROOT advmod advmod prep pcomp advmod amod pobj
+nsubj advmod ROOT advmod cc conj advmod conj advmod
+nsubj ROOT dobj prep pcomp advmod conj advmod
+ROOT prep amod pobj cc conj advmod advmod
+ROOT advmod cc conj acomp
+ROOT advmod dep advmod prep compound pobj
+ROOT advmod advmod cc conj advmod dep advmod
+ROOT advmod advcl cc conj amod dobj
+ROOT advmod amod dobj mark advcl amod dobj
+ROOT advmod advmod advmod cc conj advmod amod pobj
+ROOT advmod advmod advmod prep pobj advmod advmod
+ROOT advmod dep cc conj advmod conj advmod
+ROOT amod amod npadvmod mark advcl advmod advmod advmod
+ROOT advmod prep pobj advmod advmod advmod
+ROOT prep pobj advmod
+ROOT advmod advmod cc conj
+nsubj ROOT dobj cc conj advmod
+ROOT advmod prep advcl prep amod pobj
+nsubj ROOT advmod cc conj acomp advmod
+ROOT advmod advcl advmod cc conj
+ROOT acl prep pobj advmod advmod
+ROOT amod amod dobj cc conj prt advmod
+ROOT advmod advmod mark nsubj advcl oprd
+ROOT advmod advmod advmod cc conj advmod advmod
+ROOT prt amod dobj cc conj advmod advcl
+ROOT prep amod pobj prep pobj advmod advcl advmod
+ROOT prt advmod cc conj advmod advmod advmod
+ROOT advmod dep advmod prep pobj advmod dep
+ROOT advmod advmod cc conj amod amod dobj
+ROOT advmod advcl cc conj advmod dep advmod
+nsubj advmod ROOT dobj mark auxpass advcl advmod
+nsubj ROOT cc conj advmod advmod
+ROOT advmod advcl advmod cc conj advmod advmod
+ROOT advmod cc conj advmod advcl
+ROOT advmod advcl cc conj acomp
+ROOT advmod advmod advmod prep pobj dep advmod
+ROOT amod dobj prep pobj advmod amod dobj
+ROOT advmod dep cc conj advmod
+ROOT advmod xcomp advmod cc conj prt advmod
+ROOT dobj cc conj advmod advmod advmod
+ROOT prt advmod cc conj advmod amod dobj
+nsubj ROOT dobj cc conj prep amod pobj
+nsubj advmod ROOT advmod prep compound pobj
+ROOT advmod dep prep auxpass compound dep
+ROOT advmod cc conj advmod advmod
+ROOT advmod prep compound pobj
+nsubj advmod dep advmod prep pobj ROOT oprd
+nsubj cc conj advmod ROOT advmod
+ROOT advmod advmod prep pobj advcl advmod
+ROOT advmod advmod advmod prep pobj advmod conj advmod
+ROOT advmod advmod advmod prep pobj pobj
+nsubj ROOT dobj cc conj advmod conj advmod
+ROOT dobj mark advcl advmod advmod
+ROOT advmod advmod prep conj advmod amod dobj
+ROOT amod dobj prep pobj advmod dep
+ROOT advmod amod pobj cc conj acomp
+advcl advmod ROOT advmod prep pobj advmod amod dobj
+ROOT advmod advcl cc conj advmod amod pobj
+ROOT advmod dep advmod cc conj advmod amod npadvmod
+ROOT advmod xcomp mark advcl prep amod pobj

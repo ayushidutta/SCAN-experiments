@@ -13,5 +13,10 @@ python main.py \
   --batch_size=1 \
   --hidden_dim=200 \
   --dropout=0.5 \
+  --bidirection=1 \
+  --num_layers=2 \
   --rnn_type=lstm \
+  --add_pos=1 \
+  --add_dl=0 \
+  --cl=0 \
   --eval=0
