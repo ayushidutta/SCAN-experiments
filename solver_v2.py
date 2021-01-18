@@ -18,8 +18,8 @@ CLIP = 5.0
 
 def load_model(data_fields, state):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    SRC = data_fields["src"]
-    TRG = data_fields["trg"]
+    SRC = data_fields["src"][1]
+    TRG = data_fields["trg"][1]
     INPUT_DIM = len(SRC.vocab)
     OUTPUT_DIM = len(TRG.vocab)
     EMB_DIM = HID_DIM = state['hidden_dim']
@@ -38,7 +38,7 @@ def load_model(data_fields, state):
     enc = enc_model(INPUT_DIM, EMB_DIM, HID_DIM, DROPOUT, bidirection=state['bidirection'], num_layers=state['num_layers'])
     enc = enc.to(device)
     dec_model = dec_models[state['rnn_type']]
-    dec = dec_model(OUTPUT_DIM, EMB_DIM, HID_DIM, DROPOUT, device, num_layers=state['num_layers'])
+    dec = dec_model(OUTPUT_DIM, EMB_DIM, HID_DIM, DROPOUT, num_layers=state['num_layers'])
     dec = dec.to(device)
     model = Seq2Seq(enc, dec, device, state['rnn_type'])
     model = model.to(device)
@@ -76,10 +76,12 @@ def train(model: nn.Module,
     step_loss_values = []
     while step_index < 100000:
         for batch_index, batch in tqdm(enumerate(iter(iterator))):
-            src = batch.src.to(device)
-            trg = batch.trg.to(device)
+            batch_data = {}
+            for key in batch:
+                batch_data[key] = batch[key].to(device)
+            trg = batch_data["trg"]
             optimizer.zero_grad()
-            output = model(src, trg)
+            output = model(batch_data)
             output = output[1:].view(-1, output.shape[-1])
             trg = trg[1:].view(-1)
             loss = criterion(output, trg)
@@ -105,9 +107,8 @@ def test(model, test_iter, eos_index):
     correct_count = 0
     with torch.no_grad():
         for _, batch in tqdm(enumerate(test_iter)):
-            src = batch.src
-            trg = batch.trg
-            output = model(src, trg, train=False, eos_index=eos_index)
+            trg = batch["trg"]
+            output = model(batch, train=False, eos_index=eos_index)
             true = list(torch.flatten(trg[1:]))
             if output == true:
                 correct_count += 1

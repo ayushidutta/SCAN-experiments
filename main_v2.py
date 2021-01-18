@@ -59,19 +59,19 @@ def main():
     print(f"Run Config State, Eval: {state}, {eval}")
     # Train and Test
     train_data, test_data, data_fields = load_data_v2(path_train, path_test, model_dir, add_pos=add_pos, add_dl=add_dl)
-    #data_iters = get_data_iters(train_data, test_data, batch_size=batch_size, cl=cl)
-    #model, optimizer, criterion = load_model(data_fields, state)
-    #if eval == 0:
-        #if cl:
-            #print('Training by Curriculum Learning!')
-            #pass
-        #else:
-            #print('Training !')
-            #model = train(model, data_iters[0], optimizer, criterion, model_dir=model_dir)
-    #else:
-        #print('Evaluating !')
-        #model.load_state_dict(torch.load(model_path))
-    #test(model, data_iters[-1], eos_index=data_fields["trg"].vocab.stoi[EOS_TOKEN])
+    data_iters = get_data_iters(train_data, test_data, batch_size=batch_size, cl=cl)
+    model, optimizer, criterion = load_model(data_fields, state)
+    if eval == 0:
+        if cl:
+            print('Training by Curriculum Learning!')
+            pass
+        else:
+            print('Training !')
+            model = train(model, data_iters[0], optimizer, criterion, model_dir=model_dir)
+    else:
+        print('Evaluating !')
+        model.load_state_dict(torch.load(model_path))
+    test(model, data_iters[-1], eos_index=data_fields["trg"][1].vocab.stoi[EOS_TOKEN])
 
 if __name__ == "__main__":
 	main()

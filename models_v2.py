@@ -28,7 +28,8 @@ class LSTMEncoder(nn.Module):
             self.fc_memory_bi_to_uni = nn.Linear(hid_dim * 2, hid_dim)
 
     def forward(self,
-                src: Tensor) -> Tuple[Tensor]:
+                src: Tensor,
+                linguistic_ftrs=None) -> Tuple[Tensor]:
         embedded = self.dropout(self.embedding(src))
         outputs, (hidden, memory) = self.rnn(embedded)
         if self.bidirectional: # Project the final bidirectional memory states, as Decoder is unidirectional
@@ -44,10 +45,8 @@ class LSTMDecoder(nn.Module):
                  emb_dim: int,
                  hid_dim: int,
                  dropout_p: int,
-                 device: str,
                  num_layers = 2):
         super(LSTMDecoder, self).__init__()
-        self.device = device
         self.output_dim = output_dim
         self.embedding = nn.Embedding(output_dim, emb_dim)
         self.rnn = nn.LSTM(input_size=emb_dim, hidden_size=hid_dim, num_layers=num_layers, dropout=dropout_p)
@@ -60,7 +59,6 @@ class LSTMDecoder(nn.Module):
                 decoder_memory: Tensor,
                 encoder_output: Tensor) -> Tuple[Tensor]:
         decoding_input = decoding_input.unsqueeze(0)
-        decoding_input = decoding_input.to(self.device)
         embedded = self.dropout(self.embedding(decoding_input))
         output, (decoder_hidden, decoder_memory) = self.rnn(embedded, (decoder_hidden, decoder_memory))
         output = output.squeeze(0)
@@ -83,7 +81,8 @@ class GRUEncoder(nn.Module):
         self.hidden_dim = hid_dim
 
     def forward(self,
-                src: Tensor) -> Tuple[Tensor]:
+                src: Tensor,
+                linguistic_ftrs = None) -> Tuple[Tensor]:
         embedded = self.dropout(self.embedding(src))
         outputs, hidden = self.rnn(embedded)
         return outputs, hidden
@@ -98,16 +97,14 @@ class GRUAttDecoder(nn.Module):
                  emb_dim: int,
                  hid_dim: int,
                  dropout_p: int,
-                 device: str,
                  num_layers = 1):
         super(GRUAttDecoder, self).__init__()
-        self.device = device
         self.output_dim = output_dim
         self.embedding = nn.Embedding(output_dim, emb_dim)
         self.rnn = nn.GRU(input_size=emb_dim + hid_dim, hidden_size=hid_dim, num_layers=num_layers, dropout=dropout_p)
         self.w1 = nn.Linear(hid_dim, hid_dim, bias=False)
         self.w2 = nn.Linear(hid_dim, hid_dim, bias=False)
-        self.v = nn.Linear(hid_dim)
+        self.v = nn.Linear(hid_dim, 1)
         self.out = nn.Linear(hid_dim, output_dim)
         self.dropout = nn.Dropout(dropout_p)
 
@@ -141,15 +138,21 @@ class Seq2Seq(nn.Module):
         print(f'Is LSTM Model: {self.is_lstm}')
 
     def forward(self,
-                src: Tensor,
-                trg: Tensor,
+                batch: Tensor,
                 train: bool = True,
                 teacher_forcing_ratio: float = 0.5,
                 eos_index: int = 3) -> Tensor:
+        src = batch["src"]
+        trg = batch["trg"]
+        linguistic_ftrs = {}
+        if "pos" in batch:
+            linguistic_ftrs["pos"] = batch["pos"]
+        if "dl" in batch:
+            linguistic_ftrs["dl"] = batch["dl"]
         if self.is_lstm:
-            encoder_output, hidden, memory = self.encoder(src)
+            encoder_output, hidden, memory = self.encoder(src, linguistic_ftrs=linguistic_ftrs)
         else:
-            encoder_output, hidden = self.encoder(src)
+            encoder_output, hidden = self.encoder(src, linguistic_ftrs=linguistic_ftrs)
         input_vec = trg[0, :]
         if train == False:
             outputs = []
