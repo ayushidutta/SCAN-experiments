@@ -14,8 +14,8 @@ python main_v2.py \
   --hidden_dim=200 \
   --dropout=0 \
   --bidirection=0 \
-  --num_layers=1 \
-  --rnn_type=gru_attn \
+  --num_layers=2 \
+  --rnn_type=lstm \
   --add_pos=1 \
   --add_dl=0 \
   --cl=0 \

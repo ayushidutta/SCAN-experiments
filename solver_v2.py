@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch import Tensor
 from torchtext.data import BucketIterator
-from models_v2 import LSTMEncoder, LSTMDecoder, Seq2Seq, GRUEncoder, GRUAttDecoder
+from models_v2 import LSTMEncoder, LSTMDecoder, Seq2Seq, GRUEncoder, GRUAttDecoder, LSTMAttDecoder
 from tqdm import tqdm
 import os
 import pdb
@@ -24,6 +24,11 @@ def load_model(data_fields, state):
     OUTPUT_DIM = len(TRG.vocab)
     EMB_DIM = HID_DIM = state['hidden_dim']
     DROPOUT = state['dropout']
+    add_linguistic_ftrs = state["add_linguistic_ftrs"]
+    if add_linguistic_ftrs['add_pos']:
+        add_linguistic_ftrs['pos_dim'] = len(data_fields["pos"][1].vocab)
+    if add_linguistic_ftrs['add_dl']:
+        add_linguistic_ftrs['dl_dim'] = len(data_fields["dl"][1].vocab)
     enc_models = {
         'lstm': LSTMEncoder,
         'gru': GRUEncoder,
@@ -32,10 +37,12 @@ def load_model(data_fields, state):
     }
     dec_models = {
         'lstm': LSTMDecoder,
+        'gru': GRUAttDecoder,
+        'lstm_attn': LSTMAttDecoder,
         'gru_attn': GRUAttDecoder
     }
     enc_model = enc_models[state['rnn_type']]
-    enc = enc_model(INPUT_DIM, EMB_DIM, HID_DIM, DROPOUT, bidirection=state['bidirection'], num_layers=state['num_layers'])
+    enc = enc_model(INPUT_DIM, EMB_DIM, HID_DIM, DROPOUT, bidirection=state['bidirection'], num_layers=state['num_layers'], add_linguistic_ftrs=add_linguistic_ftrs)
     enc = enc.to(device)
     dec_model = dec_models[state['rnn_type']]
     dec = dec_model(OUTPUT_DIM, EMB_DIM, HID_DIM, DROPOUT, num_layers=state['num_layers'])
@@ -68,7 +75,8 @@ def train(model: nn.Module,
           iterator: BucketIterator,
           optimizer: optim.Optimizer,
           criterion: nn.Module,
-          model_dir: str):
+          model_dir: str,
+          add_linguistic_ftrs=None):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.train()
     step_index = 0
@@ -76,12 +84,16 @@ def train(model: nn.Module,
     step_loss_values = []
     while step_index < 100000:
         for batch_index, batch in tqdm(enumerate(iter(iterator))):
-            batch_data = {}
-            for key in batch:
-                batch_data[key] = batch[key].to(device)
-            trg = batch_data["trg"]
+            src = batch.src.to(device)
+            trg = batch.trg.to(device)
+            linguistic_ftrs = {}
+            if add_linguistic_ftrs is not None:
+                if add_linguistic_ftrs["add_pos"]:
+                    linguistic_ftrs["pos"] = batch.pos.to(device)
+                if add_linguistic_ftrs["add_dl"]:
+                    linguistic_ftrs["dl"] = batch.dl.to(device)
             optimizer.zero_grad()
-            output = model(batch_data)
+            output = model(src, trg, linguistic_ftrs)
             output = output[1:].view(-1, output.shape[-1])
             trg = trg[1:].view(-1)
             loss = criterion(output, trg)
@@ -101,14 +113,21 @@ def train(model: nn.Module,
     return model
 
 # TEST MODEL
-def test(model, test_iter, eos_index):
+def test(model, test_iter, eos_index, add_linguistic_ftrs=None):
     model.eval()
     print(f'Evaluating Test data of size: {len(test_iter)}')
     correct_count = 0
     with torch.no_grad():
         for _, batch in tqdm(enumerate(test_iter)):
-            trg = batch["trg"]
-            output = model(batch, train=False, eos_index=eos_index)
+            src = batch.src
+            trg = batch.trg
+            linguistic_ftrs = {}
+            if add_linguistic_ftrs is not None:
+                if add_linguistic_ftrs["add_pos"]:
+                    linguistic_ftrs["pos"] = batch.pos
+                if add_linguistic_ftrs["add_dl"]:
+                    linguistic_ftrs["dl"] = batch.dl
+            output = model(src, trg, linguistic_ftrs, train=False, eos_index=eos_index)
             true = list(torch.flatten(trg[1:]))
             if output == true:
                 correct_count += 1

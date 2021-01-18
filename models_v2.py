@@ -16,9 +16,22 @@ class LSTMEncoder(nn.Module):
                  hid_dim: int,
                  dropout_p: float,
                  bidirection = False,
-                 num_layers = 2):
+                 num_layers = 2,
+                 add_linguistic_ftrs = None):
         super(LSTMEncoder, self).__init__()
-        self.embedding = nn.Embedding(input_dim, emb_dim)
+        pos_emb_dim = 10
+        dl_emb_dim = 10
+        word_emb_dim = emb_dim
+        self.add_linguistic_ftrs = add_linguistic_ftrs
+        if add_linguistic_ftrs is not None:
+            if add_linguistic_ftrs['add_pos']:
+                self.pos_embedding = nn.Embedding(add_linguistic_ftrs['pos_dim'], pos_emb_dim)
+                word_emb_dim = word_emb_dim - pos_emb_dim
+            if add_linguistic_ftrs['add_dl']:
+                self.dl_embedding = nn.Embedding(add_linguistic_ftrs['dl_dim'], dl_emb_dim)
+                word_emb_dim = word_emb_dim - dl_emb_dim
+        print(f'Word Embedding Dim: {word_emb_dim}')
+        self.embedding = nn.Embedding(input_dim, word_emb_dim)
         self.rnn = nn.LSTM(emb_dim, hid_dim, bidirectional=bidirection, num_layers=num_layers, dropout=dropout_p)
         self.dropout = nn.Dropout(dropout_p)
         self.bidirectional = bidirection
@@ -30,8 +43,16 @@ class LSTMEncoder(nn.Module):
     def forward(self,
                 src: Tensor,
                 linguistic_ftrs=None) -> Tuple[Tensor]:
-        embedded = self.dropout(self.embedding(src))
-        outputs, (hidden, memory) = self.rnn(embedded)
+        embedded = self.embedding(src)
+        if self.add_linguistic_ftrs is not None:
+            if self.add_linguistic_ftrs['add_pos']:
+                pos_emb = self.pos_embedding(linguistic_ftrs["pos"])
+                embedded = torch.cat((embedded, pos_emb), 2)
+            if self.add_linguistic_ftrs['add_dl']:
+                dl_emb = self.dl_embedding(linguistic_ftrs["dl"])
+                embedded = torch.cat((embedded, dl_emb), 2)
+        rnn_input = self.dropout(embedded)
+        outputs, (hidden, memory) = self.rnn(rnn_input)
         if self.bidirectional: # Project the final bidirectional memory states, as Decoder is unidirectional
             hidden = hidden.view(2, 2, -1, self.hidden_dim)
             memory = memory.view(2, 2, -1, self.hidden_dim)
@@ -65,6 +86,39 @@ class LSTMDecoder(nn.Module):
         output = self.out(output)
         return output, decoder_hidden, decoder_memory
 
+class LSTMAttDecoder(nn.Module):
+    def __init__(self,
+                 output_dim: int,
+                 emb_dim: int,
+                 hid_dim: int,
+                 dropout_p: int,
+                 num_layers = 1):
+        super(LSTMAttDecoder, self).__init__()
+        self.output_dim = output_dim
+        self.embedding = nn.Embedding(output_dim, emb_dim)
+        self.rnn = nn.LSTM(input_size=emb_dim + hid_dim, hidden_size=hid_dim, num_layers=num_layers, dropout=dropout_p)
+        self.w1 = nn.Linear(hid_dim, hid_dim, bias=False)
+        self.w2 = nn.Linear(hid_dim, hid_dim, bias=False)
+        self.v = nn.Linear(hid_dim, 1)
+        self.out = nn.Linear(hid_dim, output_dim)
+        self.dropout = nn.Dropout(dropout_p)
+
+    def forward(self,
+                decoding_input: Tensor,
+                decoder_hidden: Tensor,
+                decoder_memory: Tensor,
+                encoder_output: Tensor) -> Tuple[Tensor]:
+        decoding_input = decoding_input.unsqueeze(0)
+        embedded = self.dropout(self.embedding(decoding_input))
+        energy = self.v(torch.tanh(self.w1(decoder_hidden[-1]) + self.w2(encoder_output)))
+        attn_weights = F.softmax(energy.view(1, -1), dim=1)
+        context = torch.matmul(attn_weights, encoder_output.squeeze(1))
+        rnn_input = torch.cat((embedded[0], context), 1).unsqueeze(0)
+        output, (decoder_hidden, decoding_memory) = self.rnn(rnn_input, (decoder_hidden, decoder_memory))
+        output = output.squeeze(0)
+        output = self.out(output)
+        return output, decoder_hidden, decoding_memory
+
 # GRU Based Models
 class GRUEncoder(nn.Module):
     def __init__(self,
@@ -73,9 +127,22 @@ class GRUEncoder(nn.Module):
                  hid_dim: int,
                  dropout_p: float,
                  bidirection = False,
-                 num_layers = 1):
+                 num_layers = 1,
+                 add_linguistic_ftrs = None):
         super(GRUEncoder, self).__init__()
-        self.embedding = nn.Embedding(input_dim, emb_dim)
+        pos_emb_dim = 10
+        dl_emb_dim = 10
+        word_emb_dim = emb_dim
+        self.add_linguistic_ftrs = add_linguistic_ftrs
+        if add_linguistic_ftrs is not None:
+            if add_linguistic_ftrs['add_pos']:
+                self.pos_embedding = nn.Embedding(add_linguistic_ftrs['pos_dim'], pos_emb_dim)
+                word_emb_dim = word_emb_dim - pos_emb_dim
+            if add_linguistic_ftrs['add_dl']:
+                self.dl_embedding = nn.Embedding(add_linguistic_ftrs['dl_dim'], dl_emb_dim)
+                word_emb_dim = word_emb_dim - dl_emb_dim
+        print(f'Word Embedding Dim: {word_emb_dim}')
+        self.embedding = nn.Embedding(input_dim, word_emb_dim)
         self.rnn = nn.GRU(emb_dim, hid_dim, num_layers=num_layers, dropout=dropout_p)
         self.dropout = nn.Dropout(dropout_p)
         self.hidden_dim = hid_dim
@@ -83,13 +150,20 @@ class GRUEncoder(nn.Module):
     def forward(self,
                 src: Tensor,
                 linguistic_ftrs = None) -> Tuple[Tensor]:
-        embedded = self.dropout(self.embedding(src))
-        outputs, hidden = self.rnn(embedded)
+        embedded = self.embedding(src)
+        if self.add_linguistic_ftrs is not None:
+            if self.add_linguistic_ftrs['add_pos']:
+                pos_emb = self.pos_embedding(linguistic_ftrs["pos"])
+                embedded = torch.cat((embedded, pos_emb), 2)
+            if self.add_linguistic_ftrs['add_dl']:
+                dl_emb = self.dl_embedding(linguistic_ftrs["dl"])
+                embedded = torch.cat((embedded, dl_emb), 2)
+        rnn_input = self.dropout(embedded)
+        outputs, hidden = self.rnn(rnn_input)
         return outputs, hidden
 
 # Code assuming Encoder is unidirectional.
-# TODO: Bias within tanh ? Input Concat ? Output concat ? Input state project ?
-# output = self.out(torch.cat((output, decoding_input, embedded), dim = 0.0))
+# output = self.out(torch.cat((output, decoding_input, embedded), dim = 0.0)) ?
 # TODO: Code works when batch size=1, have to make it generic
 class GRUAttDecoder(nn.Module):
     def __init__(self,
@@ -138,17 +212,12 @@ class Seq2Seq(nn.Module):
         print(f'Is LSTM Model: {self.is_lstm}')
 
     def forward(self,
-                batch: Tensor,
+                src: Tensor,
+                trg: Tensor,
+                linguistic_ftrs=None,
                 train: bool = True,
                 teacher_forcing_ratio: float = 0.5,
                 eos_index: int = 3) -> Tensor:
-        src = batch["src"]
-        trg = batch["trg"]
-        linguistic_ftrs = {}
-        if "pos" in batch:
-            linguistic_ftrs["pos"] = batch["pos"]
-        if "dl" in batch:
-            linguistic_ftrs["dl"] = batch["dl"]
         if self.is_lstm:
             encoder_output, hidden, memory = self.encoder(src, linguistic_ftrs=linguistic_ftrs)
         else:

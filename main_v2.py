@@ -53,8 +53,7 @@ def main():
         'bidirection': True if args.bidirection==1 else False,
         'num_layers': args.num_layers,
         'rnn_type': args.rnn_type,
-        'add_pos': add_pos,
-        'add_dl': add_dl
+        'add_linguistic_ftrs' : { 'add_pos': add_pos, 'add_dl': add_dl}
     }
     print(f"Run Config State, Eval: {state}, {eval}")
     # Train and Test
@@ -67,11 +66,11 @@ def main():
             pass
         else:
             print('Training !')
-            model = train(model, data_iters[0], optimizer, criterion, model_dir=model_dir)
+            model = train(model, data_iters[0], optimizer, criterion, model_dir=model_dir, add_linguistic_ftrs=state['add_linguistic_ftrs'])
     else:
         print('Evaluating !')
         model.load_state_dict(torch.load(model_path))
-    test(model, data_iters[-1], eos_index=data_fields["trg"][1].vocab.stoi[EOS_TOKEN])
+    test(model, data_iters[-1], eos_index=data_fields["trg"][1].vocab.stoi[EOS_TOKEN], add_linguistic_ftrs=state['add_linguistic_ftrs'])
 
 if __name__ == "__main__":
 	main()
