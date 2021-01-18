@@ -5,7 +5,7 @@ TRAIN_PATH=experiment1/tasks_train_simple
 TEST_PATH=experiment1/tasks_test_simple
 MODEL_DIR=models/exp1_lstm_drop0
 
-python main.py \
+python main_v2.py \
   --data_dir=${DATA_DIR} \
   --model_dir=${MODEL_DIR} \
   --train_path=${TRAIN_PATH} \

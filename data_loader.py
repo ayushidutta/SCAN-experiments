@@ -121,6 +121,13 @@ def load_data_v2(path_train, path_test, model_dir, add_pos=False, add_dl=False):
 		print(f"DL Vocab STOI: {dl.vocab.stoi}")
 		print(f"DL Vocab ITOS: {dl.vocab.itos}")
 		print(f"DL Vocab Length {len(dl.vocab)}")
+	for i in train_data:
+		print(train_data)
+		print(train_data[i].src)
+		print(train_data[i].trg)
+		print(train_data[i].pos)
+	print(len(train_data))
+	print(len(test_data))
 	return train_data, test_data, data_fields
 
 def get_data_iters(train_data, test_data, batch_size=1, cl=False):
