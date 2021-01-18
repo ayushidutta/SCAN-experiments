@@ -5,7 +5,7 @@
 import os
 from torchtext.datasets import TranslationDataset
 from torchtext import data
-from torchtext.data import Dataset, Iterator, Field, BucketIterator
+from torchtext.data import Dataset, Iterator, Field, TabularDataset, BucketIterator
 import dill
 import pdb
 import torch
@@ -76,26 +76,17 @@ def load_data_v2(path_train, path_test, model_dir, add_pos=False, add_dl=False):
 					 batch_first=False, lower=lowercase, unk_token=UNK_TOKEN, include_lengths=False)
 	trg = data.Field(init_token=BOS_TOKEN, eos_token=EOS_TOKEN, pad_token=PAD_TOKEN, tokenize=tokenizer,
 					 unk_token=UNK_TOKEN, batch_first=False, lower=lowercase, include_lengths=False)
-	exts = ("." + in_ext, "." + out_ext)
-	fields = (src, trg)
-	data_fields = {
-		'src':src,
-		'trg':trg
-	}
+	pos = dl = None
 	if add_pos:
 		pos = data.Field(init_token=BOS_TOKEN, eos_token=EOS_TOKEN, pad_token=PAD_TOKEN, tokenize=tokenizer,
 						 batch_first=False, lower=lowercase, unk_token=UNK_TOKEN, include_lengths=False)
-		exts = exts + ("."+pos_ext,)
-		fields = fields + (pos,)
-		data_fields["pos"] = pos
 	if add_dl:
 		dl = data.Field(init_token=BOS_TOKEN, eos_token=EOS_TOKEN, pad_token=PAD_TOKEN, tokenize=tokenizer,
 						 batch_first=False, lower=lowercase, unk_token=UNK_TOKEN, include_lengths=False)
-		exts = exts + ("." + dl_ext,)
-		fields = fields + (dl,)
-		data_fields["dl"] = dl
-	train_data = TranslationDataset(path=path_train, exts=exts, fields=fields)
-	test_data = TranslationDataset(path=path_test, exts=exts, fields=fields)
+	fields = [("src", src), ("trg", trg), ("pos",pos), ("dl", dl)]
+	data_fields = {'src': src, 'trg': trg, 'pos':pos, 'dl': dl}
+	train_data, test_data = TabularDataset.splits( train= path_train + '.json', test=path_test+'.json',
+								format='json', fields=fields)
 	# build the vocabulary
 	src.build_vocab(train_data)
 	trg.build_vocab(train_data)
@@ -121,11 +112,13 @@ def load_data_v2(path_train, path_test, model_dir, add_pos=False, add_dl=False):
 		print(f"DL Vocab STOI: {dl.vocab.stoi}")
 		print(f"DL Vocab ITOS: {dl.vocab.itos}")
 		print(f"DL Vocab Length {len(dl.vocab)}")
-	for i in train_data:
-		print(train_data)
-		print(train_data[i].src)
-		print(train_data[i].trg)
-		print(train_data[i].pos)
+	for i, x in enumerate(train_data):
+		print(x)
+		print(x[i].src)
+		print(x[i].trg)
+		print(x[i].pos)
+		if i==3:
+			break
 	print(len(train_data))
 	print(len(test_data))
 	return train_data, test_data, data_fields
