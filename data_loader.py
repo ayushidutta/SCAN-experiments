@@ -72,7 +72,7 @@ def load_data_v2(path_train, path_test, model_dir, add_pos=False, add_dl=False):
 	tokenizer = lambda x: x.split()
 	lowercase = True
 	# We need init_token=BOS_TOKEN, for attn model. For lstm, it doesnt affect much.
-	src = data.Field(init_token=BOS_TOKEN, eos_token=EOS_TOKEN, pad_token=PAD_TOKEN, tokenize=tokenizer,
+	src = data.Field(init_token=None, eos_token=EOS_TOKEN, pad_token=PAD_TOKEN, tokenize=tokenizer,
 					 batch_first=False, lower=lowercase, unk_token=UNK_TOKEN, include_lengths=False)
 	trg = data.Field(init_token=BOS_TOKEN, eos_token=EOS_TOKEN, pad_token=PAD_TOKEN, tokenize=tokenizer,
 					 unk_token=UNK_TOKEN, batch_first=False, lower=lowercase, include_lengths=False)

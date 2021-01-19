@@ -63,6 +63,8 @@ def load_model(data_fields, state):
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     def count_parameters(model: nn.Module):
+        for name, p in model.named_parameters():
+            print(f'Param: {name}, grad {p.requires_grad}, size {p.size()}, {p.numel()}')
         return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
     print(f'The model has {count_parameters(model):,} trainable parameters')

@@ -107,7 +107,7 @@ class GRUAttDecoder(nn.Module):
         self.rnn = nn.GRU(input_size=emb_dim + hid_dim, hidden_size=hid_dim, num_layers=num_layers, dropout=dropout_p)
         self.w1 = nn.Linear(hid_dim, hid_dim, bias=False)
         self.w2 = nn.Linear(hid_dim, hid_dim, bias=False)
-        self.v = nn.Linear(hid_dim)
+        self.v = nn.Linear(hid_dim, 1)
         self.out = nn.Linear(hid_dim, output_dim)
         self.dropout = nn.Dropout(dropout_p)
 

@@ -26,10 +26,10 @@ class LSTMEncoder(nn.Module):
         if add_linguistic_ftrs is not None:
             if add_linguistic_ftrs['add_pos']:
                 self.pos_embedding = nn.Embedding(add_linguistic_ftrs['pos_dim'], pos_emb_dim)
-                word_emb_dim = word_emb_dim - pos_emb_dim
+                emb_dim = emb_dim + pos_emb_dim
             if add_linguistic_ftrs['add_dl']:
                 self.dl_embedding = nn.Embedding(add_linguistic_ftrs['dl_dim'], dl_emb_dim)
-                word_emb_dim = word_emb_dim - dl_emb_dim
+                emb_dim = emb_dim + dl_emb_dim
         print(f'Word Embedding Dim: {word_emb_dim}')
         self.embedding = nn.Embedding(input_dim, word_emb_dim)
         self.rnn = nn.LSTM(emb_dim, hid_dim, bidirectional=bidirection, num_layers=num_layers, dropout=dropout_p)
@@ -137,10 +137,10 @@ class GRUEncoder(nn.Module):
         if add_linguistic_ftrs is not None:
             if add_linguistic_ftrs['add_pos']:
                 self.pos_embedding = nn.Embedding(add_linguistic_ftrs['pos_dim'], pos_emb_dim)
-                word_emb_dim = word_emb_dim - pos_emb_dim
+                emb_dim = emb_dim + pos_emb_dim
             if add_linguistic_ftrs['add_dl']:
                 self.dl_embedding = nn.Embedding(add_linguistic_ftrs['dl_dim'], dl_emb_dim)
-                word_emb_dim = word_emb_dim - dl_emb_dim
+                emb_dim = emb_dim + dl_emb_dim
         print(f'Word Embedding Dim: {word_emb_dim}')
         self.embedding = nn.Embedding(input_dim, word_emb_dim)
         self.rnn = nn.GRU(emb_dim, hid_dim, num_layers=num_layers, dropout=dropout_p)

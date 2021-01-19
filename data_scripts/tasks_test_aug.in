@@ -1,0 +1,62 @@
+walk
+look
+run
+jump
+turn left
+turn right
+walk left
+look left
+run left
+jump left
+walk right
+look right
+run right
+jump right
+turn opposite left
+turn opposite right
+walk opposite left
+look opposite left
+run opposite left
+jump opposite left
+walk opposite right
+look opposite right
+run opposite right
+jump opposite right
+turn around left
+turn around right
+walk around left
+look around left
+run around left
+jump around left
+walk around right
+look around right
+run around right
+jump around right
+walk twice
+look twice
+run twice
+jump twice
+turn left twice
+turn right twice
+walk thrice
+look thrice
+run thrice
+jump thrice
+turn left thrice
+turn right thrice
+walk and walk
+walk and look
+walk and run
+walk and jump
+walk and turn left
+walk and turn right
+look and walk
+look and look
+look and run
+look and jump
+run after walk
+run after look
+run after run
+jump after jump
+jump after turn left
+turn right after jump
