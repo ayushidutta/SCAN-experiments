@@ -114,13 +114,70 @@ def train(model: nn.Module,
     plot_loss(step_loss_values, save_dir=model_dir)
     return model
 
+# TRAIN BY Curriculum Learning
+def train_by_cl(model: nn.Module,
+          iterators,
+          optimizer: optim.Optimizer,
+          criterion: nn.Module,
+          model_dir: str,
+          add_linguistic_ftrs=None):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.train()
+    step_index = 0
+    step_loss = 0
+    step_loss_values = []
+    iter_epochs = [30, 30, 1, 4]
+    epoch = 0
+    for iter_idx in range(1):
+        for _ in range(iter_epochs[iter_idx]):
+            for batch_index, batch in tqdm(enumerate(iter(iterators[iter_idx]))):
+                src = batch.src.to(device)
+                trg = batch.trg.to(device)
+                linguistic_ftrs = {}
+                if add_linguistic_ftrs is not None:
+                    if add_linguistic_ftrs["add_pos"]:
+                        linguistic_ftrs["pos"] = batch.pos.to(device)
+                    if add_linguistic_ftrs["add_dl"]:
+                        linguistic_ftrs["dl"] = batch.dl.to(device)
+                optimizer.zero_grad()
+                output = model(src, trg, linguistic_ftrs)
+                output = output[1:].view(-1, output.shape[-1])
+                trg = trg[1:].view(-1)
+                loss = criterion(output, trg)
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), CLIP)
+                optimizer.step()
+                step_index += 1
+                step_loss += loss.item()
+                if step_index % 1000 == 0:
+                    print('Loss/1K steps:', step_loss / 1000)
+                    step_loss_values.append(step_loss / 1000)
+                    step_loss = 0
+                if step_index % 100000 == 0:
+                    torch.save(model.state_dict(), os.path.join(model_dir, 'model_' + str(step_index) + '.pt'))
+                    print('Reached Max steps! phew!')
+                    plot_loss(step_loss_values, save_dir=model_dir)
+                    return model
+            epoch = epoch + 1
+            torch.save(model.state_dict(), os.path.join(model_dir, 'model_e' + str(epoch) + '.pt'))
+    # Save training loss plot
+    print(f'Training done, epochs: {epoch}')
+    plot_loss(step_loss_values, save_dir=model_dir)
+    return model
+
 # TEST MODEL
-def test(model, test_iter, eos_index, add_linguistic_ftrs=None):
+def test(model, test_iter, eos_index, add_linguistic_ftrs=None, data_fields=None):
     model.eval()
     print(f'Evaluating Test data of size: {len(test_iter)}')
     correct_count = 0
+    qual_res = {}
+    save = False
+    if data_fields is not None:
+        src_vocab = data_fields["src"][1].vocab
+        trg_vocab = data_fields["trg"][1].vocab
+        save = True
     with torch.no_grad():
-        for _, batch in tqdm(enumerate(test_iter)):
+        for batch_idx, batch in tqdm(enumerate(test_iter)):
             src = batch.src
             trg = batch.trg
             linguistic_ftrs = {}
@@ -133,8 +190,21 @@ def test(model, test_iter, eos_index, add_linguistic_ftrs=None):
             true = list(torch.flatten(trg[1:]))
             if output == true:
                 correct_count += 1
+            elif save:
+                cmd = ''
+                for i in list(torch.flatten(src)):
+                    cmd = cmd + ' ' + src_vocab.itos[i]
+                gt = ''
+                for i in list(torch.flatten(trg)):
+                    gt = gt + ' ' + trg_vocab.itos[i]
+                pred = ''
+                for i in output:
+                    pred = pred + ' ' + trg_vocab.itos[i]
+                qual_res[batch_idx] = {'cmd': cmd.strip(), 'pred': pred.strip(), 'gt': gt.strip()}
+
     print("Accuracy: ")
     print((correct_count / len(test_iter))*100.0)
+    return qual_res
 
 # PLOTS
 def plot_loss(loss_step_values, save_dir=None):

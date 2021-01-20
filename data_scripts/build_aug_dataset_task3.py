@@ -47,13 +47,7 @@ with open(src_file, 'r') as fsrc, open(trg_file, 'r') as ftrg, open(aug_file + '
             src_lines.append(src_line)
             trg_lines.append(jump_trg_lines[j])
     n_lines = len(src_lines)
-    for i, src_line in enumerate(src_lines):
-        wsrc.write(src_line+"\n")
-        wtrg.write(trg_lines[i]+"\n")
-
-
-
-
-
-
-
+    idxs = np.random.permutation(n_lines)
+    for idx in idxs:
+        wsrc.write(src_lines[idx]+"\n")
+        wtrg.write(trg_lines[idx]+"\n")

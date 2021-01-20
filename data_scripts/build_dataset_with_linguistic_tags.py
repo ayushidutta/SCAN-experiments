@@ -3,8 +3,8 @@ import glob
 import spacy
 import io, json
 
-data_dir = 'data'
-data_subdirs = ['experiment1', 'experiment2', 'experiment3']
+data_dir = 'data_scripts'
+data_subdirs = ['']
 
 def generate_dataset(file_path):
     nlp = spacy.load("en_core_web_sm")

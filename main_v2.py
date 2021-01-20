@@ -1,8 +1,9 @@
-from data_loader import load_data_v2, get_data_iters, EOS_TOKEN
-from solver_v2 import load_model, train, test
+from data_loader import load_data_v2, load_data_and_iter_cl, get_data_iters, EOS_TOKEN
+from solver_v2 import load_model, train, test, train_by_cl
 import os
 import argparse
 import torch
+import json
 
 parser = argparse.ArgumentParser(description='SCAN reproduction')
 parser.add_argument('--data_dir', metavar='DIR',
@@ -57,20 +58,25 @@ def main():
     }
     print(f"Run Config State, Eval: {state}, {eval}")
     # Train and Test
-    train_data, test_data, data_fields = load_data_v2(path_train, path_test, model_dir, add_pos=add_pos, add_dl=add_dl)
-    data_iters = get_data_iters(train_data, test_data, batch_size=batch_size, cl=cl)
+    if not cl:
+        train_data, test_data, data_fields = load_data_v2(path_train, path_test, model_dir, add_pos=add_pos, add_dl=add_dl)
+        data_iters = get_data_iters(train_data, test_data, batch_size=batch_size, cl=cl)
+    else:
+        data_iters, data_fields = load_data_and_iter_cl(path_train, path_test, model_dir)
     model, optimizer, criterion = load_model(data_fields, state)
     if eval == 0:
         if cl:
             print('Training by Curriculum Learning!')
-            pass
+            model = train_by_cl(model, data_iters[0:4], optimizer, criterion, model_dir=model_dir, add_linguistic_ftrs=state['add_linguistic_ftrs'])
         else:
             print('Training !')
             model = train(model, data_iters[0], optimizer, criterion, model_dir=model_dir, add_linguistic_ftrs=state['add_linguistic_ftrs'])
     else:
         print('Evaluating !')
         model.load_state_dict(torch.load(model_path))
-    test(model, data_iters[-1], eos_index=data_fields["trg"][1].vocab.stoi[EOS_TOKEN], add_linguistic_ftrs=state['add_linguistic_ftrs'])
+    res = test(model, data_iters[-1], eos_index=data_fields["trg"][1].vocab.stoi[EOS_TOKEN], add_linguistic_ftrs=state['add_linguistic_ftrs'], data_fields=data_fields)
+    with open(os.path.join(model_dir, "res.json"), "w", encoding='utf-8') as fout:
+        fout.write(json.dumps(res, ensure_ascii=False) + "\n")
 
 if __name__ == "__main__":
 	main()

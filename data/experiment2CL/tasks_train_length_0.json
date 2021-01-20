@@ -1,0 +1,62 @@
+{"src": "walk", "trg": "I_WALK", "pos": "VB", "dl": "ROOT"}
+{"src": "look", "trg": "I_LOOK", "pos": "VB", "dl": "ROOT"}
+{"src": "run", "trg": "I_RUN", "pos": "VB", "dl": "ROOT"}
+{"src": "jump", "trg": "I_JUMP", "pos": "VB", "dl": "ROOT"}
+{"src": "turn left", "trg": "I_TURN_LEFT", "pos": "VB RB", "dl": "ROOT acl"}
+{"src": "turn right", "trg": "I_TURN_RIGHT", "pos": "VB RB", "dl": "ROOT advmod"}
+{"src": "walk left", "trg": "I_TURN_LEFT I_WALK", "pos": "VB JJ", "dl": "nsubj ROOT"}
+{"src": "look left", "trg": "I_TURN_LEFT I_LOOK", "pos": "VB JJ", "dl": "auxpass ROOT"}
+{"src": "run left", "trg": "I_TURN_LEFT I_RUN", "pos": "VB RB", "dl": "nsubj ROOT"}
+{"src": "jump left", "trg": "I_TURN_LEFT I_JUMP", "pos": "VB VBN", "dl": "ROOT acl"}
+{"src": "walk right", "trg": "I_TURN_RIGHT I_WALK", "pos": "VB JJ", "dl": "ROOT advmod"}
+{"src": "look right", "trg": "I_TURN_RIGHT I_LOOK", "pos": "VB JJ", "dl": "ROOT advmod"}
+{"src": "run right", "trg": "I_TURN_RIGHT I_RUN", "pos": "VB RB", "dl": "ROOT advmod"}
+{"src": "jump right", "trg": "I_TURN_RIGHT I_JUMP", "pos": "VB RB", "dl": "ROOT advmod"}
+{"src": "turn opposite left", "trg": "I_TURN_LEFT I_TURN_LEFT", "pos": "VB RB RB", "dl": "ROOT advmod dep"}
+{"src": "turn opposite right", "trg": "I_TURN_RIGHT I_TURN_RIGHT", "pos": "VB RB RB", "dl": "ROOT advmod advmod"}
+{"src": "walk opposite left", "trg": "I_TURN_LEFT I_TURN_LEFT I_WALK", "pos": "VB RB RB", "dl": "ROOT advmod ROOT"}
+{"src": "look opposite left", "trg": "I_TURN_LEFT I_TURN_LEFT I_LOOK", "pos": "VB RB RB", "dl": "ROOT acomp dep"}
+{"src": "run opposite left", "trg": "I_TURN_LEFT I_TURN_LEFT I_RUN", "pos": "VB RB RB", "dl": "ROOT advmod dep"}
+{"src": "jump opposite left", "trg": "I_TURN_LEFT I_TURN_LEFT I_JUMP", "pos": "VB RB RB", "dl": "ROOT advmod conj"}
+{"src": "walk opposite right", "trg": "I_TURN_RIGHT I_TURN_RIGHT I_WALK", "pos": "VB RB RB", "dl": "ROOT advmod advmod"}
+{"src": "look opposite right", "trg": "I_TURN_RIGHT I_TURN_RIGHT I_LOOK", "pos": "VB RB RB", "dl": "ROOT advmod advmod"}
+{"src": "run opposite right", "trg": "I_TURN_RIGHT I_TURN_RIGHT I_RUN", "pos": "VB RB RB", "dl": "ROOT advmod advmod"}
+{"src": "jump opposite right", "trg": "I_TURN_RIGHT I_TURN_RIGHT I_JUMP", "pos": "VB RB RB", "dl": "ROOT advmod advmod"}
+{"src": "turn around left", "trg": "I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT", "pos": "VB RP RB", "dl": "ROOT advmod advcl"}
+{"src": "turn around right", "trg": "I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT", "pos": "VB RP RB", "dl": "ROOT prt advmod"}
+{"src": "walk around left", "trg": "I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK", "pos": "VB RB RB", "dl": "ROOT advmod advcl"}
+{"src": "look around left", "trg": "I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK", "pos": "VB RB RB", "dl": "ROOT advmod pobj"}
+{"src": "run around left", "trg": "I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN", "pos": "VB RB RB", "dl": "ROOT advmod npadvmod"}
+{"src": "jump around left", "trg": "I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP", "pos": "VB RB RB", "dl": "ROOT advmod advcl"}
+{"src": "walk around right", "trg": "I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK", "pos": "VB RB RB", "dl": "ROOT advmod advmod"}
+{"src": "look around right", "trg": "I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK", "pos": "VB RB RB", "dl": "ROOT advmod advmod"}
+{"src": "run around right", "trg": "I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN", "pos": "VB RB RB", "dl": "ROOT prt advmod"}
+{"src": "jump around right", "trg": "I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP", "pos": "VB RB RB", "dl": "ROOT prt advmod"}
+{"src": "walk twice", "trg": "I_WALK I_WALK", "pos": "VB RB", "dl": "ROOT advmod"}
+{"src": "look twice", "trg": "I_LOOK I_LOOK", "pos": "VB RB", "dl": "ROOT advmod"}
+{"src": "run twice", "trg": "I_RUN I_RUN", "pos": "VB RB", "dl": "ROOT advmod"}
+{"src": "jump twice", "trg": "I_JUMP I_JUMP", "pos": "VB RB", "dl": "ROOT advmod"}
+{"src": "turn left twice", "trg": "I_TURN_LEFT I_TURN_LEFT", "pos": "VB VBN RB", "dl": "nsubj ROOT advmod"}
+{"src": "turn right twice", "trg": "I_TURN_RIGHT I_TURN_RIGHT", "pos": "VB RB RB", "dl": "ROOT advmod advmod"}
+{"src": "walk thrice", "trg": "I_WALK I_WALK I_WALK", "pos": "VB NNP", "dl": "compound ROOT"}
+{"src": "look thrice", "trg": "I_LOOK I_LOOK I_LOOK", "pos": "VB NNP", "dl": "compound ROOT"}
+{"src": "run thrice", "trg": "I_RUN I_RUN I_RUN", "pos": "VB NNP", "dl": "compound ROOT"}
+{"src": "jump thrice", "trg": "I_JUMP I_JUMP I_JUMP", "pos": "NNP NNP", "dl": "compound ROOT"}
+{"src": "turn left thrice", "trg": "I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT", "pos": "VB VBD NN", "dl": "nsubj ROOT oprd"}
+{"src": "turn right thrice", "trg": "I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT", "pos": "VB JJ NN", "dl": "ROOT amod dobj"}
+{"src": "walk and walk", "trg": "I_WALK I_WALK", "pos": "VB CC VB", "dl": "ROOT cc conj"}
+{"src": "walk and look", "trg": "I_WALK I_LOOK", "pos": "VB CC VB", "dl": "ROOT cc conj"}
+{"src": "walk and run", "trg": "I_WALK I_RUN", "pos": "VB CC VB", "dl": "ROOT cc conj"}
+{"src": "walk and jump", "trg": "I_WALK I_JUMP", "pos": "VB CC VB", "dl": "ROOT cc conj"}
+{"src": "walk and turn left", "trg": "I_WALK I_TURN_LEFT", "pos": "VB CC VB RB", "dl": "nsubjpass cc conj ROOT"}
+{"src": "walk and turn right", "trg": "I_WALK I_TURN_RIGHT", "pos": "VB CC VB RB", "dl": "ROOT cc conj advmod"}
+{"src": "look and walk", "trg": "I_LOOK I_WALK", "pos": "VB CC VB", "dl": "ROOT cc conj"}
+{"src": "look and look", "trg": "I_LOOK I_LOOK", "pos": "VB CC VB", "dl": "ROOT cc conj"}
+{"src": "look and run", "trg": "I_LOOK I_RUN", "pos": "VB CC VB", "dl": "ROOT cc conj"}
+{"src": "look and jump", "trg": "I_LOOK I_JUMP", "pos": "VB CC VB", "dl": "ROOT cc conj"}
+{"src": "run after walk", "trg": "I_WALK I_RUN", "pos": "VB IN NN", "dl": "ROOT prep pobj"}
+{"src": "run after look", "trg": "I_LOOK I_RUN", "pos": "VB IN NN", "dl": "ROOT prep pobj"}
+{"src": "run after run", "trg": "I_RUN I_RUN", "pos": "VB IN NN", "dl": "ROOT prep pobj"}
+{"src": "jump after jump", "trg": "I_JUMP I_JUMP", "pos": "VB IN NN", "dl": "ROOT prep pobj"}
+{"src": "jump after turn left", "trg": "I_TURN_LEFT I_JUMP", "pos": "VB IN NN RB", "dl": "ROOT mark pobj advcl"}
+{"src": "turn right after jump", "trg": "I_JUMP I_TURN_RIGHT", "pos": "VB RB IN NN", "dl": "ROOT advmod prep pobj"}

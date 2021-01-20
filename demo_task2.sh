@@ -1,11 +1,11 @@
 #!/bin/bash
 
 DATA_DIR=data
-TRAIN_PATH=experiment2/tasks_train_length
-TEST_PATH=experiment2/tasks_test_length
-MODEL_DIR=models/tasks_length
+TRAIN_PATH=experiment2CL/tasks_train_length
+TEST_PATH=experiment2CL/tasks_test_length
+MODEL_DIR=models/exp2cl
 
-python main.py \
+python main_v2.py \
   --data_dir=${DATA_DIR} \
   --model_dir=${MODEL_DIR} \
   --train_path=${TRAIN_PATH} \
@@ -13,10 +13,10 @@ python main.py \
   --batch_size=1 \
   --hidden_dim=200 \
   --dropout=0.5 \
-  --bidirection=1 \
+  --bidirection=0 \
   --num_layers=2 \
   --rnn_type=lstm \
-  --add_pos=1 \
+  --add_pos=0 \
   --add_dl=0 \
-  --cl=0 \
-  --eval=0
+  --cl=1 \
+  --eval=1
