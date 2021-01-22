@@ -41,7 +41,7 @@ python main_v2.py \
   --eval=1
 ```
 where,
-_add_pos_: To add POS tags or not, 1 or 0. Default 0.
-_add_dl_: To add Dependency labels or not, 1 or 0. Default 0.
-_cl_: Enable curriculum learning, 1 or 0. Default 0.
-_eval_: Set to eval mode to test model, else it will train, 1 or 0.
+- _add_pos_: To add POS tags or not, 1 or 0. Default 0.
+- _add_dl_: To add Dependency labels or not, 1 or 0. Default 0.
+- _cl_: Enable curriculum learning, 1 or 0. Default 0.
+- _eval_: Set to eval mode to test model, else it will train, 1 or 0.
