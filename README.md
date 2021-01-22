@@ -1,6 +1,6 @@
 # SCAN-experiments
 
-Final Project for Advanced NLP course, Autumn 2020. 
+Final Project for Advanced NLP course, Autumn 2020, University of Copenhagen. 
 
 The code contains 
 - Reproduction of the SCAN experiments
