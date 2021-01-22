@@ -126,9 +126,9 @@ def train_by_cl(model: nn.Module,
     step_index = 0
     step_loss = 0
     step_loss_values = []
-    iter_epochs = [1, 1, 1, 4]
+    iter_epochs = [30, 30, 1, 4]
     epoch = 0
-    for iter_idx in range(4):
+    for iter_idx in range(1):
         for _ in range(iter_epochs[iter_idx]):
             for batch_index, batch in tqdm(enumerate(iter(iterators[iter_idx]))):
                 src = batch.src.to(device)
