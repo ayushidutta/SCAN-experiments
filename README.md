@@ -14,8 +14,11 @@ The code contains
 
 ## Setup and Code details
 The 'data' folder contains the SCAN dataset formatted as per the code requirement. 
+
 The 'data_scripts' folder contains the scripts that was used to createt the data in the 'data' folder. 
+
 There are two versions of the code. Updated version are the files suffixed with '_v2'. 
+
 Use '_v2' for all experiments. Use '_v1' only if wanting simpler code for reproducing the SCAN experiments.  
 
 ## Run the code
